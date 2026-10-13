@@ -14,6 +14,10 @@
    3. Si dejas las comillas vacías "", se muestra un espacio marcado [FOTO].
    4. Un local puede llevar varias fotos con  fotos: ["img/a.jpg", "img/b.jpg"]
       La primera es la principal y las demás salen como miniaturas.
+   5. La foto de la propiedad (fachada) también acepta varias:
+      fachada: ["img/a.jpg", "img/b.jpg"]
+   6. Si una propiedad no lleva locales, borra la parte de locales y usa
+      descripcion: "texto corto" para describir el espacio.
 
    REGLAS
    - Respeta siempre las comillas "" y las comas al final de cada línea.
@@ -57,5 +61,13 @@ var PROPIEDADES = [
         ]
       }
     ]
+  },
+  {
+    nombre: "Atelier Monteleón",
+    tipo: "Oficinas, consultorios y talleres creativos",
+    precio: "Desde $3,500 mensuales",
+    direccion: "5 de Febrero 309, Zona Centro, León",
+    descripcion: "Espacios de 12 m² con baño propio.",
+    fachada: []
   }
 ];

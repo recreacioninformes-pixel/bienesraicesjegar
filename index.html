@@ -110,6 +110,7 @@ header { background: var(--bg); border-bottom: 1px solid var(--line); position: 
 .prop-precio { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 22px; line-height: 1.3; margin-top: 10px; }
 .prop-dir { display: flex; gap: 12px; align-items: flex-start; font-size: 16px; line-height: 1.6; color: #E6E6E6; }
 .prop-dir svg { flex: none; margin-top: 3px; }
+.prop-desc { font-size: 16px; line-height: 1.6; color: #E6E6E6; padding: 14px 16px; border-left: 3px solid #FFFFFF; background: #232323; }
 .units-title { font-weight: 700; font-size: 16px; }
 .units { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 14px; }
 .unit { flex: 1 1 150px; min-width: 0; display: flex; flex-direction: column; gap: 10px; }
@@ -120,7 +121,7 @@ header { background: var(--bg); border-bottom: 1px solid var(--line); position: 
 .gal-thumbs { display: flex; gap: 8px; flex-wrap: wrap; }
 .gal-thumbs button { padding: 0; border: 2px solid transparent; background: none; border-radius: 2px; cursor: pointer; width: 72px; height: 56px; overflow: hidden; }
 .gal-thumbs button.on { border-color: #FFFFFF; }
-.gal-thumbs img { width: 100%; height: 100%; object-fit: cover; display: block; aspect-ratio: auto; }
+.gal-thumbs img, .prop-photo .gal-thumbs img { width: 100%; height: 100%; object-fit: cover; display: block; aspect-ratio: auto; }
 .prop-info .btn { min-height: 54px; font-size: 16px; }
 
 /* Por qué JEGAR */
@@ -510,7 +511,25 @@ footer { background: #0B0B0B; color: #FFFFFF; }
     var art = el('article', 'prop');
 
     var izq = el('div', 'prop-photo');
-    izq.appendChild(foto(p.fachada, 'Fachada de ' + p.nombre, 'big', '[FOTO DE LA FACHADA DE ' + String(p.nombre || '').toUpperCase() + ']'));
+    var fotosLugar = Array.isArray(p.fachada) ? p.fachada.filter(Boolean) : (p.fachada ? [p.fachada] : []);
+    if (fotosLugar.length > 1) {
+      var grande = el('img'); grande.src = fotosLugar[0]; grande.alt = 'Foto de ' + p.nombre; grande.loading = 'lazy';
+      izq.appendChild(grande);
+      var tiraL = el('div', 'gal-thumbs'); tiraL.style.marginTop = '10px';
+      fotosLugar.forEach(function (ruta, i) {
+        var b = el('button', i === 0 ? 'on' : ''); b.type = 'button'; b.setAttribute('aria-label', 'Ver foto ' + (i + 1));
+        var t = el('img'); t.src = ruta; t.alt = ''; t.loading = 'lazy'; b.appendChild(t);
+        b.addEventListener('click', function () {
+          grande.src = ruta;
+          Array.prototype.forEach.call(tiraL.children, function (x) { x.className = ''; });
+          b.className = 'on';
+        });
+        tiraL.appendChild(b);
+      });
+      izq.appendChild(tiraL);
+    } else {
+      izq.appendChild(foto(fotosLugar[0], 'Fachada de ' + p.nombre, 'big', '[FOTO DE LA FACHADA DE ' + String(p.nombre || '').toUpperCase() + ']'));
+    }
     art.appendChild(izq);
 
     var der = el('div', 'prop-info');
@@ -526,6 +545,8 @@ footer { background: #0B0B0B; color: #FFFFFF; }
       dir.appendChild(el('p', '', p.direccion));
       der.appendChild(dir);
     }
+
+    if (p.descripcion) der.appendChild(el('p', 'prop-desc', p.descripcion));
 
     if (p.locales && p.locales.length) {
       var bloque = el('div');
