@@ -77,5 +77,13 @@ var PROPIEDADES = [
       "img/atelier-monteleon-6.jpg",
       "img/atelier-monteleon-7.jpg"
     ]
+  },
+  {
+    nombre: "Casa Magnolia",
+    tipo: "Suites de estancia corta y larga",
+    precio: "$850 por noche",
+    direccion: "Pedro Moreno 243A, Zona Centro, León",
+    descripcion: "Cotizaciones personalizadas para estancias semanales y mensuales.",
+    fachada: []
   }
 ];
