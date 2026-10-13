@@ -116,10 +116,21 @@ var PROPIEDADES = [
   },
   {
     nombre: "Sananda Centro Holístico",
+    etiqueta: "Low cost · Ideal para emprendedores",
     tipo: "",
     precio: "Desde $3,000 mensuales",
     direccion: "Juan Bautista La Salle 603, Col. Panorama, León",
-    descripcion: "Espacios de 8 m².",
+    titulo_unidades: "Espacio disponible",
+    locales: [
+      {
+        nombre: "Espacio disponible",
+        detalle: "8 m² · $3,000 mensuales",
+        fotos: [
+          "img/sananda-espacio-1.jpg",
+          "img/sananda-espacio-2.jpg"
+        ]
+      }
+    ],
     fachada: [
       "img/sananda-fachada.jpg",
       "img/sananda-patio.jpg",
