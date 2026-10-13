@@ -85,6 +85,7 @@ var PROPIEDADES = [
     direccion: "Pedro Moreno 243A, Zona Centro, León",
     descripcion: "Cotizaciones personalizadas para estancias semanales y mensuales.",
     fachada: [
+      "img/casa-magnolia-fachada.jpg",
       "img/casa-magnolia-1.jpg",
       "img/casa-magnolia-2.jpg",
       "img/casa-magnolia-3.jpg",
