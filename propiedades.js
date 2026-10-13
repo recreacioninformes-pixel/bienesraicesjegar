@@ -39,5 +39,17 @@ var PROPIEDADES = [
         ]
       }
     ]
+  },
+  {
+    nombre: "Cañada Wellness Center",
+    tipo: "Consultorios",
+    precio: "Desde $6,000 mensuales",
+    direccion: "Calle Cañada 408, Col. Jardines del Moral, León",
+    fachada: "",
+    titulo_unidades: "Consultorios disponibles",
+    locales: [
+      { nombre: "Consultorio [N.º]", detalle: "[m²] · [renta mensual]", foto: "" },
+      { nombre: "Consultorio [N.º]", detalle: "[m²] · [renta mensual]", foto: "" }
+    ]
   }
 ];

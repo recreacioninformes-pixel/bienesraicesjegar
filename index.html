@@ -529,7 +529,7 @@ footer { background: #0B0B0B; color: #FFFFFF; }
 
     if (p.locales && p.locales.length) {
       var bloque = el('div');
-      bloque.appendChild(el('h4', 'units-title', 'Locales disponibles'));
+      bloque.appendChild(el('h4', 'units-title', p.titulo_unidades || 'Locales disponibles'));
       var us = el('div', 'units');
       p.locales.forEach(function (u) {
         var c = el('div', 'unit');
