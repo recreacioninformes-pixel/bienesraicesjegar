@@ -105,7 +105,14 @@ var PROPIEDADES = [
     precio: "Desde $3,000 mensuales",
     direccion: "Cesáreo Boillot 313, Col. Panorama, León",
     descripcion: "Espacios de 10 m², pensados para emprendedores que van comenzando.",
-    fachada: []
+    fachada: [
+      "img/casa-azul-fachada.jpg",
+      "img/casa-azul-patio.jpg",
+      "img/casa-azul-sala.jpg",
+      "img/casa-azul-pasillo.jpg",
+      "img/casa-azul-consultorio-2a.jpg",
+      "img/casa-azul-consultorio-2b.jpg"
+    ]
   }
 ];
 
@@ -134,6 +141,6 @@ var PORTAFOLIO = [
   {
     nombre: "Casa Azul",
     direccion: "Cesáreo Boillot 313, Col. Panorama, León",
-    foto: ""
+    foto: "img/casa-azul-fachada.jpg"
   }
 ];
