@@ -45,11 +45,17 @@ var PROPIEDADES = [
     tipo: "Consultorios",
     precio: "Desde $6,000 mensuales",
     direccion: "Calle Cañada 408, Col. Jardines del Moral, León",
-    fachada: "",
+    fachada: "img/canada-fachada.jpg",
     titulo_unidades: "Consultorios disponibles",
     locales: [
-      { nombre: "Consultorio [N.º]", detalle: "[m²] · [renta mensual]", foto: "" },
-      { nombre: "Consultorio [N.º]", detalle: "[m²] · [renta mensual]", foto: "" }
+      {
+        nombre: "Consultorio",
+        detalle: "20 m² · $6,000 mensuales",
+        fotos: [
+          "img/canada-consultorio-1.jpg",
+          "img/canada-consultorio-2.jpg"
+        ]
+      }
     ]
   }
 ];
