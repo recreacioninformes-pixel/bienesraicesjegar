@@ -116,6 +116,11 @@ header { background: var(--bg); border-bottom: 1px solid var(--line); position: 
 .unit img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; display: block; border-radius: 2px; }
 .unit b { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 14px; }
 .unit span { font-size: 13px; line-height: 1.4; color: #BDBDBD; }
+.unit .gal-main { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block; border-radius: 2px; }
+.gal-thumbs { display: flex; gap: 8px; flex-wrap: wrap; }
+.gal-thumbs button { padding: 0; border: 2px solid transparent; background: none; border-radius: 2px; cursor: pointer; width: 72px; height: 56px; overflow: hidden; }
+.gal-thumbs button.on { border-color: #FFFFFF; }
+.gal-thumbs img { width: 100%; height: 100%; object-fit: cover; display: block; aspect-ratio: auto; }
 .prop-info .btn { min-height: 54px; font-size: 16px; }
 
 /* Por qué JEGAR */
@@ -528,7 +533,26 @@ footer { background: #0B0B0B; color: #FFFFFF; }
       var us = el('div', 'units');
       p.locales.forEach(function (u) {
         var c = el('div', 'unit');
-        c.appendChild(foto(u.foto, (u.nombre || 'Local') + ' de ' + p.nombre, 'small', '[FOTO]'));
+        var alt = (u.nombre || 'Local') + ' de ' + p.nombre;
+        var lista_fotos = (u.fotos && u.fotos.length) ? u.fotos.filter(Boolean) : (u.foto ? [u.foto] : []);
+        if (lista_fotos.length > 1) {
+          var principal = el('img', 'gal-main'); principal.src = lista_fotos[0]; principal.alt = alt; principal.loading = 'lazy';
+          c.appendChild(principal);
+          var tira = el('div', 'gal-thumbs');
+          lista_fotos.forEach(function (ruta, i) {
+            var b = el('button', i === 0 ? 'on' : ''); b.type = 'button'; b.setAttribute('aria-label', 'Ver foto ' + (i + 1));
+            var t = el('img'); t.src = ruta; t.alt = ''; t.loading = 'lazy'; b.appendChild(t);
+            b.addEventListener('click', function () {
+              principal.src = ruta;
+              Array.prototype.forEach.call(tira.children, function (x) { x.className = ''; });
+              b.className = 'on';
+            });
+            tira.appendChild(b);
+          });
+          c.appendChild(tira);
+        } else {
+          c.appendChild(foto(lista_fotos[0], alt, 'small', '[FOTO]'));
+        }
         c.appendChild(el('b', '', u.nombre || ''));
         if (u.detalle) c.appendChild(el('span', '', u.detalle));
         us.appendChild(c);

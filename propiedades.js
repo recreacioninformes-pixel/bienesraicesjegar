@@ -12,6 +12,8 @@
    1. Sube la foto a la carpeta "img" del repositorio.
    2. Escribe aquí su ruta, por ejemplo:  "img/urban-center-fachada.jpg"
    3. Si dejas las comillas vacías "", se muestra un espacio marcado [FOTO].
+   4. Un local puede llevar varias fotos con  fotos: ["img/a.jpg", "img/b.jpg"]
+      La primera es la principal y las demás salen como miniaturas.
 
    REGLAS
    - Respeta siempre las comillas "" y las comas al final de cada línea.
@@ -27,7 +29,15 @@ var PROPIEDADES = [
     direccion: "Blvd. Algeciras 1402, Col. Arbide, León",
     fachada: "img/urban-center-fachada.jpg",
     locales: [
-      { nombre: "Local disponible", detalle: "50 m² · $15,000 mensuales", foto: "" }
+      {
+        nombre: "Local disponible",
+        detalle: "50 m² · $15,000 mensuales",
+        fotos: [
+          "img/urban-center-local-1-exterior.jpg",
+          "img/urban-center-local-1-interior-1.jpg",
+          "img/urban-center-local-1-interior-2.jpg"
+        ]
+      }
     ]
   }
 ];
