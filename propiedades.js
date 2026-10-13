@@ -68,6 +68,14 @@ var PROPIEDADES = [
     precio: "Desde $3,500 mensuales",
     direccion: "5 de Febrero 309, Zona Centro, León",
     descripcion: "Espacios de 12 m² con baño propio.",
-    fachada: []
+    fachada: [
+      "img/atelier-monteleon-1.jpg",
+      "img/atelier-monteleon-2.jpg",
+      "img/atelier-monteleon-3.jpg",
+      "img/atelier-monteleon-4.jpg",
+      "img/atelier-monteleon-5.jpg",
+      "img/atelier-monteleon-6.jpg",
+      "img/atelier-monteleon-7.jpg"
+    ]
   }
 ];
