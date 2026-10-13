@@ -18,7 +18,9 @@
       La primera es la principal y las demás salen como miniaturas.
    5. La foto de la propiedad (fachada) también acepta varias:
       fachada: ["img/a.jpg", "img/b.jpg"]
-   6. Si una propiedad no lleva locales, borra la parte de locales y usa
+   6. Para poner una etiqueta destacada (por ejemplo "Low cost"), agrega
+      etiqueta: "Texto de la etiqueta",
+   7. Si una propiedad no lleva locales, borra la parte de locales y usa
       descripcion: "texto corto" para describir el espacio.
 
    REGLAS
@@ -95,16 +97,18 @@ var PROPIEDADES = [
       "img/casa-magnolia-5.jpg",
       "img/casa-magnolia-6.jpg"
     ]
+  },
+  {
+    nombre: "Casa Azul",
+    etiqueta: "Low cost · Ideal para emprendedores",
+    tipo: "",
+    precio: "Desde $3,000 mensuales",
+    direccion: "Cesáreo Boillot 313, Col. Panorama, León",
+    descripcion: "Espacios de 10 m², pensados para emprendedores que van comenzando.",
+    fachada: []
   }
 ];
 
-
-/* ==========================================================================
-   PORTAFOLIO (sección "Propiedades")
-   Aquí van TODAS las propiedades, solo con nombre, dirección y una foto de
-   la fachada. No importa si tienen o no espacios disponibles.
-   Para agregar una, copia un bloque { ... }, pégalo abajo y cambia los datos.
-   ========================================================================== */
 
 var PORTAFOLIO = [
   {
@@ -126,5 +130,10 @@ var PORTAFOLIO = [
     nombre: "Casa Magnolia",
     direccion: "Pedro Moreno 243A, Zona Centro, León",
     foto: "img/casa-magnolia-fachada.jpg"
+  },
+  {
+    nombre: "Casa Azul",
+    direccion: "Cesáreo Boillot 313, Col. Panorama, León",
+    foto: ""
   }
 ];

@@ -124,6 +124,9 @@ header { background: var(--bg); border-bottom: 1px solid var(--line); position: 
 .gal-thumbs img, .prop-photo .gal-thumbs img { width: 100%; height: 100%; object-fit: cover; display: block; aspect-ratio: auto; }
 .prop-info .btn { min-height: 54px; font-size: 16px; }
 
+/* Etiqueta (ej. low cost) */
+.prop-badge { display: inline-block; margin-bottom: 12px; margin-right: 10px; padding: 6px 12px; background: #FFFFFF; color: #111111; border-radius: 2px; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; }
+
 /* Portafolio */
 .portafolio-wrap { background: #FFFFFF; }
 .portafolio { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 24px; margin-top: 48px; }
@@ -573,7 +576,8 @@ footer { background: #0B0B0B; color: #FFFFFF; }
 
     var der = el('div', 'prop-info');
     var cab = el('div');
-    cab.appendChild(el('span', 'prop-tipo', p.tipo || ''));
+    if (p.etiqueta) cab.appendChild(el('span', 'prop-badge', p.etiqueta));
+    if (p.tipo) cab.appendChild(el('span', 'prop-tipo', p.tipo));
     cab.appendChild(el('h3', '', p.nombre || ''));
     if (p.precio) cab.appendChild(el('p', 'prop-precio', p.precio));
     der.appendChild(cab);
