@@ -25,7 +25,7 @@ var PROPIEDADES = [
     tipo: "Locales comerciales",
     precio: "Desde $15,000 mensuales",
     direccion: "[DIRECCIÓN DE URBAN CENTER]",
-    fachada: "",
+    fachada: "img/urban-center-fachada.jpg",
     locales: [
       { nombre: "Local [N.º]", detalle: "[m²] · [renta mensual]", foto: "" },
       { nombre: "Local [N.º]", detalle: "[m²] · [renta mensual]", foto: "" },
