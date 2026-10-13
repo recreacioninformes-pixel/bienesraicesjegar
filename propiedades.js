@@ -23,13 +23,11 @@ var PROPIEDADES = [
   {
     nombre: "Urban Center",
     tipo: "Locales comerciales",
-    precio: "Desde $15,000 mensuales",
-    direccion: "[DIRECCIÓN DE URBAN CENTER]",
+    precio: "$15,000 mensuales",
+    direccion: "Blvd. Algeciras 1402, Col. Arbide, León",
     fachada: "img/urban-center-fachada.jpg",
     locales: [
-      { nombre: "Local [N.º]", detalle: "[m²] · [renta mensual]", foto: "" },
-      { nombre: "Local [N.º]", detalle: "[m²] · [renta mensual]", foto: "" },
-      { nombre: "Local [N.º]", detalle: "[m²] · [renta mensual]", foto: "" }
+      { nombre: "Local disponible", detalle: "50 m² · $15,000 mensuales", foto: "" }
     ]
   }
 ];
