@@ -124,6 +124,15 @@ header { background: var(--bg); border-bottom: 1px solid var(--line); position: 
 .gal-thumbs img, .prop-photo .gal-thumbs img { width: 100%; height: 100%; object-fit: cover; display: block; aspect-ratio: auto; }
 .prop-info .btn { min-height: 54px; font-size: 16px; }
 
+/* Portafolio */
+.portafolio-wrap { background: #FFFFFF; }
+.portafolio { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 24px; margin-top: 48px; }
+.pf { display: flex; flex-direction: column; gap: 14px; }
+.pf img, .pf .ph { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block; border-radius: 2px; }
+.pf .ph { background: #EDEDED; border-color: #BDBDBD; color: #6B6B6B; font-size: 12px; }
+.pf h3 { font-weight: 700; font-size: 20px; line-height: 1.2; }
+.pf .prop-dir { color: #333333; font-size: 15px; }
+
 /* Por qué JEGAR */
 .why-grid { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 48px; }
 .why { flex: 1 1 300px; min-width: 0; display: flex; flex-direction: column; gap: 14px; padding-top: 24px; border-top: 3px solid var(--ink); }
@@ -201,13 +210,15 @@ footer { background: #0B0B0B; color: #FFFFFF; }
     </a>
     <nav class="nav-links" aria-label="Principal">
       <a href="#servicios">Servicios</a>
+      <a href="#propiedades">Propiedades</a>
+      <a href="#disponibilidad">Disponibilidad</a>
       <a href="#nosotros">Por qué JEGAR</a>
       <a href="#zonas">Zonas</a>
       <a href="#preguntas">Preguntas</a>
       <a href="#contacto">Contacto</a>
     </nav>
     <div class="nav-actions">
-      <a class="btn btn-sm btn-dark" href="#propiedades">Propiedades</a>
+      <a class="btn btn-sm btn-dark" href="#disponibilidad">Disponibilidad</a>
       <a class="btn btn-sm btn-wa" data-wa="base" href="https://wa.me/524773768120" target="_blank" rel="noopener">
         <svg width="20" height="20" aria-hidden="true"><use href="#i-wa"/></svg>WhatsApp
       </a>
@@ -311,12 +322,23 @@ footer { background: #0B0B0B; color: #FFFFFF; }
   </div>
 </section>
 
-<!-- PROPIEDADES (se llena desde propiedades.js) -->
-<section id="propiedades" class="props pad dark">
+<!-- PROPIEDADES: portafolio (se llena desde PORTAFOLIO en propiedades.js) -->
+<section id="propiedades" class="pad portafolio-wrap">
   <div class="wrap">
     <div class="sec-head">
       <p class="eyebrow">Propiedades</p>
-      <h2 class="h2">Conoce nuestros espacios disponibles</h2>
+      <h2 class="h2">Nuestras propiedades</h2>
+    </div>
+    <div class="portafolio" id="lista-portafolio"></div>
+  </div>
+</section>
+
+<!-- DISPONIBILIDAD (se llena desde PROPIEDADES en propiedades.js) -->
+<section id="disponibilidad" class="props pad dark">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Disponibilidad</p>
+      <h2 class="h2">Espacios disponibles</h2>
     </div>
     <div class="prop-list" id="lista-propiedades"></div>
   </div>
@@ -504,9 +526,26 @@ footer { background: #0B0B0B; color: #FFFFFF; }
     return marcador(clase, textoMarcador);
   }
 
+  /* Portafolio: solo foto y dirección */
+  var pfLista = document.getElementById('lista-portafolio');
+  var pfDatos = (typeof PORTAFOLIO !== 'undefined' && PORTAFOLIO) ? PORTAFOLIO : [];
+  if (!pfDatos.length) { document.getElementById('propiedades').hidden = true; }
+  pfDatos.forEach(function (p) {
+    var c = el('article', 'pf');
+    c.appendChild(foto(p.foto, 'Fachada de ' + p.nombre, 'small', '[FOTO]'));
+    c.appendChild(el('h3', '', p.nombre || ''));
+    if (p.direccion) {
+      var d = el('div', 'prop-dir');
+      d.appendChild(icon('i-pin', 20));
+      d.appendChild(el('p', '', p.direccion));
+      c.appendChild(d);
+    }
+    pfLista.appendChild(c);
+  });
+
   var lista = document.getElementById('lista-propiedades');
   var datos = (typeof PROPIEDADES !== 'undefined' && PROPIEDADES) ? PROPIEDADES : [];
-  if (!datos.length) { document.getElementById('propiedades').hidden = true; }
+  if (!datos.length) { document.getElementById('disponibilidad').hidden = true; }
   datos.forEach(function (p) {
     var art = el('article', 'prop');
 

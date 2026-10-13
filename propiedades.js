@@ -1,5 +1,7 @@
 /* ==========================================================================
    PROPIEDADES DE INMOBILIARIA JEGAR
+   La lista PROPIEDADES es la sección "Disponibilidad" (espacios en renta).
+   La lista PORTAFOLIO, al final, es la sección "Propiedades".
    Este es el ÚNICO archivo que necesitas editar para agregar, cambiar o
    quitar propiedades de la página.
 
@@ -93,5 +95,36 @@ var PROPIEDADES = [
       "img/casa-magnolia-5.jpg",
       "img/casa-magnolia-6.jpg"
     ]
+  }
+];
+
+
+/* ==========================================================================
+   PORTAFOLIO (sección "Propiedades")
+   Aquí van TODAS las propiedades, solo con nombre, dirección y una foto de
+   la fachada. No importa si tienen o no espacios disponibles.
+   Para agregar una, copia un bloque { ... }, pégalo abajo y cambia los datos.
+   ========================================================================== */
+
+var PORTAFOLIO = [
+  {
+    nombre: "Urban Center",
+    direccion: "Blvd. Algeciras 1402, Col. Arbide, León",
+    foto: "img/urban-center-fachada.jpg"
+  },
+  {
+    nombre: "Cañada Wellness Center",
+    direccion: "Calle Cañada 408, Col. Jardines del Moral, León",
+    foto: "img/canada-fachada.jpg"
+  },
+  {
+    nombre: "Atelier Monteleón",
+    direccion: "5 de Febrero 309, Zona Centro, León",
+    foto: "img/atelier-monteleon-1.jpg"
+  },
+  {
+    nombre: "Casa Magnolia",
+    direccion: "Pedro Moreno 243A, Zona Centro, León",
+    foto: "img/casa-magnolia-fachada.jpg"
   }
 ];
