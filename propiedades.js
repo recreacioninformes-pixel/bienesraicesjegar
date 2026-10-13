@@ -113,6 +113,19 @@ var PROPIEDADES = [
       "img/casa-azul-consultorio-2a.jpg",
       "img/casa-azul-consultorio-2b.jpg"
     ]
+  },
+  {
+    nombre: "Sananda Centro Holístico",
+    tipo: "",
+    precio: "Desde $3,000 mensuales",
+    direccion: "Juan Bautista La Salle 603, Col. Panorama, León",
+    descripcion: "Espacios de 8 m².",
+    fachada: [
+      "img/sananda-fachada.jpg",
+      "img/sananda-patio.jpg",
+      "img/sananda-recepcion.jpg",
+      "img/sananda-sala.jpg"
+    ]
   }
 ];
 
@@ -142,5 +155,10 @@ var PORTAFOLIO = [
     nombre: "Casa Azul",
     direccion: "Cesáreo Boillot 313, Col. Panorama, León",
     foto: "img/casa-azul-fachada.jpg"
+  },
+  {
+    nombre: "Sananda Centro Holístico",
+    direccion: "Juan Bautista La Salle 603, Col. Panorama, León",
+    foto: "img/sananda-fachada.jpg"
   }
 ];
