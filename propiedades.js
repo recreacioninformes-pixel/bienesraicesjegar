@@ -137,6 +137,20 @@ var PROPIEDADES = [
       "img/sananda-recepcion.jpg",
       "img/sananda-sala.jpg"
     ]
+  },
+  {
+    nombre: "Ayurveda Consultorios",
+    tipo: "Consultorios",
+    precio: "Desde $5,000 mensuales",
+    direccion: "Puerto de Palos 122, Col. Arbide, León",
+    titulo_unidades: "Consultorio disponible",
+    locales: [
+      { nombre: "Consultorio", detalle: "Desde $5,000 mensuales", foto: "img/ayurveda-consultorio.jpg" }
+    ],
+    fachada: [
+      "img/ayurveda-fachada.jpg",
+      "img/ayurveda-recepcion.jpg"
+    ]
   }
 ];
 
@@ -171,5 +185,10 @@ var PORTAFOLIO = [
     nombre: "Sananda Centro Holístico",
     direccion: "Juan Bautista La Salle 603, Col. Panorama, León",
     foto: "img/sananda-fachada.jpg"
+  },
+  {
+    nombre: "Ayurveda Consultorios",
+    direccion: "Puerto de Palos 122, Col. Arbide, León",
+    foto: "img/ayurveda-fachada.jpg"
   }
 ];
