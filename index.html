@@ -269,6 +269,10 @@ footer { background: #0B0B0B; color: #FFFFFF; }
 .prop-info .cat-tag { background: transparent; color: #FFFFFF; border: 1px solid #FFFFFF; box-shadow: none; }
 .pf[hidden], .prop[hidden] { display: none !important; }
 @media (max-width: 480px) { .filtros { gap: 6px; } .filtro { padding: 0 13px; font-size: 13px; } }
+/* Redes sociales en el pie */
+.redes { display: flex; flex-wrap: wrap; gap: 10px; }
+.red { display: inline-flex; align-items: center; gap: 10px; min-height: 44px; padding: 0 16px 0 12px; border: 1px solid #3A3A3A; border-radius: 2px; color: #FFFFFF; text-decoration: none; font-weight: 700; font-size: 15px; }
+.red:hover { background: #1F1F1F; border-color: #FFFFFF; }
 @media (max-width: 820px) { .tz { padding: 20px; gap: 28px; } .tz-info h3 { font-size: 30px; } }
 @media (max-width: 820px) {
   .nav-links { display: none; }
@@ -538,7 +542,12 @@ footer { background: #0B0B0B; color: #FFFFFF; }
     </div>
     <div>
       <h3>Redes sociales</h3>
-      <p>Bienes Raices Jegar</p>
+      <div class="redes">
+        <a class="red" href="https://www.facebook.com/jegarbienesraices" target="_blank" rel="noopener" aria-label="Facebook de Bienes Raíces Jegar">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7.5h2.5l.4-3h-2.9V8.6c0-.9.3-1.5 1.5-1.5H16.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 3.9v2.3H8v3h2.5V21h3z"/></svg>
+          <span>Facebook</span>
+        </a>
+      </div>
     </div>
   </div>
   <div class="wrap copy"><p>© 2026 Inmobiliaria JEGAR. Todos los derechos reservados.</p></div>
