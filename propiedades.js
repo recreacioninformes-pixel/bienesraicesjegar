@@ -249,6 +249,6 @@ var PORTAFOLIO = [
   {
     nombre: "Lofts Arbide",
     direccion: "Coahuila 705, Col. Arbide, León",
-    foto: ""
+    foto: "img/lofts-arbide-fachada.jpg"
   }
 ];
