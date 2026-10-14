@@ -211,6 +211,7 @@ var PROPIEDADES = [
     tipo: "Habitaciones",
     precio: "Desde $3,500 mensuales",
     direccion: "Av. México 205, Col. La Moderna, León",
+    descripcion: "Ubicada enfrente del IMSS T1.",
     fachada: [
       "img/casa-mexico-205-fachada.jpg",
       "img/casa-mexico-205-1.jpg",
