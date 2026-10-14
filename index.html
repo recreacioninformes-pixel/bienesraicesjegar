@@ -225,6 +225,14 @@ footer { background: #0B0B0B; color: #FFFFFF; }
 .tz-menu .pp b { font-family: 'Montserrat', sans-serif; font-size: 22px; color: var(--ink); }
 .tz-menu ul { margin: 8px 0 0; padding-left: 18px; font-size: 14px; line-height: 1.6; color: #333333; }
 .service .btn { align-self: flex-start; margin-top: auto; }
+/* Aviso de actualización (se apaga con AVISO_ACTUALIZANDO en propiedades.js) */
+.aviso { display: flex; gap: 14px; align-items: flex-start; margin-top: 32px; padding: 18px 20px; border: 1px solid var(--line); border-left: 4px solid var(--ink); background: var(--bg); border-radius: 2px; max-width: 860px; }
+.aviso svg { flex: none; margin-top: 2px; }
+.aviso p { font-size: 16px; line-height: 1.6; color: #333333; }
+.aviso a { font-weight: 700; }
+.dark .aviso { background: #1B1B1B; border-color: #333333; border-left-color: #FFFFFF; }
+.dark .aviso p { color: #E6E6E6; }
+.dark .aviso a { color: #FFFFFF; }
 @media (max-width: 820px) { .tz { padding: 20px; gap: 28px; } .tz-info h3 { font-size: 30px; } }
 @media (max-width: 820px) {
   .nav-links { display: none; }
@@ -374,6 +382,7 @@ footer { background: #0B0B0B; color: #FFFFFF; }
       <p class="eyebrow">Propiedades</p>
       <h2 class="h2">Nuestras propiedades</h2>
     </div>
+    <div class="aviso" data-aviso hidden><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v5"/><path d="M12 16.5v.01"/></svg><p>Estamos actualizando nuestra página para darte un mejor servicio. Muy pronto verás aquí más propiedades de nuestro portafolio.</p></div>
     <div class="portafolio" id="lista-portafolio"></div>
   </div>
 </section>
@@ -385,6 +394,7 @@ footer { background: #0B0B0B; color: #FFFFFF; }
       <p class="eyebrow">Disponibilidad</p>
       <h2 class="h2">Espacios disponibles</h2>
     </div>
+    <div class="aviso" data-aviso hidden><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v5"/><path d="M12 16.5v.01"/></svg><p>Estamos actualizando nuestro catálogo de espacios disponibles. Si no encuentras lo que buscas, <a data-wa="base" href="https://wa.me/524773768120" target="_blank" rel="noopener">escríbenos por WhatsApp</a>: tenemos más opciones para ti.</p></div>
     <div class="prop-list" id="lista-propiedades"></div>
   </div>
 </section>
@@ -519,6 +529,12 @@ footer { background: #0B0B0B; color: #FFFFFF; }
     use.setAttribute('href', '#' + id);
     svg.appendChild(use);
     return svg;
+  }
+
+  /* Aviso de "estamos actualizando": se apaga con AVISO_ACTUALIZANDO = false en propiedades.js */
+  if (typeof AVISO_ACTUALIZANDO === 'undefined' || AVISO_ACTUALIZANDO) {
+    var avisos = document.querySelectorAll('[data-aviso]');
+    for (var av = 0; av < avisos.length; av++) avisos[av].hidden = false;
   }
 
   /* Enlaces de WhatsApp con el mensaje base */

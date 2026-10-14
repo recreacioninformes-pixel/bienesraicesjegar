@@ -31,6 +31,10 @@
    - Para quitar una propiedad, borra su bloque completo.
    ========================================================================== */
 
+/* AVISO "ESTAMOS ACTUALIZANDO" en Propiedades y Disponibilidad.
+   true = se muestra el aviso. Cuando la página esté completa, cámbialo a false. */
+var AVISO_ACTUALIZANDO = true;
+
 var PROPIEDADES = [
   {
     nombre: "Urban Center",
