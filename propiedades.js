@@ -38,6 +38,7 @@ var AVISO_ACTUALIZANDO = true;
 var PROPIEDADES = [
   {
     nombre: "Urban Center",
+    categoria: "Comercial",
     tipo: "Locales comerciales",
     precio: "$15,000 mensuales",
     direccion: "Blvd. Algeciras 1402, Col. Arbide, León",
@@ -56,6 +57,7 @@ var PROPIEDADES = [
   },
   {
     nombre: "Cañada Wellness Center",
+    categoria: "Comercial",
     tipo: "Consultorios",
     precio: "Desde $6,000 mensuales",
     direccion: "Calle Cañada 408, Col. Jardines del Moral, León",
@@ -74,6 +76,7 @@ var PROPIEDADES = [
   },
   {
     nombre: "Atelier Monteleón",
+    categoria: "Comercial",
     tipo: "Oficinas, consultorios y talleres creativos",
     precio: "Desde $3,500 mensuales",
     direccion: "5 de Febrero 309, Zona Centro, León",
@@ -90,6 +93,7 @@ var PROPIEDADES = [
   },
   {
     nombre: "Casa Magnolia",
+    categoria: "Habitacional",
     tipo: "Suites de estancia corta y larga",
     precio: "$850 por noche",
     direccion: "Pedro Moreno 243A, Zona Centro, León",
@@ -106,6 +110,7 @@ var PROPIEDADES = [
   },
   {
     nombre: "Casa Azul",
+    categoria: "Comercial",
     etiqueta: "Low cost · Ideal para emprendedores",
     tipo: "",
     precio: "Desde $3,000 mensuales",
@@ -122,6 +127,7 @@ var PROPIEDADES = [
   },
   {
     nombre: "Sananda Centro Holístico",
+    categoria: "Comercial",
     etiqueta: "Low cost · Ideal para emprendedores",
     tipo: "",
     precio: "Desde $3,000 mensuales",
@@ -146,6 +152,7 @@ var PROPIEDADES = [
   },
   {
     nombre: "Ayurveda Consultorios",
+    categoria: "Comercial",
     tipo: "Consultorios",
     precio: "Desde $5,000 mensuales",
     direccion: "Puerto de Palos 122, Col. Arbide, León",
@@ -160,6 +167,7 @@ var PROPIEDADES = [
   },
   {
     nombre: "Lofts Arts",
+    categoria: "Habitacional",
     tipo: "Mini lofts amueblados",
     precio: "Desde $5,500 mensuales",
     direccion: "Juan Bautista La Salle 509, Col. Panorama, León",
@@ -208,6 +216,7 @@ var PROPIEDADES = [
   },
   {
     nombre: "Casa México 205",
+    categoria: "Habitacional",
     tipo: "Habitaciones",
     precio: "Desde $3,500 mensuales",
     direccion: "Av. México 205, Col. La Moderna, León",
@@ -226,66 +235,79 @@ var PROPIEDADES = [
 var PORTAFOLIO = [
   {
     nombre: "Urban Center",
+    categoria: "Comercial",
     direccion: "Blvd. Algeciras 1402, Col. Arbide, León",
     foto: "img/urban-center-fachada.jpg"
   },
   {
     nombre: "Cañada Wellness Center",
+    categoria: "Comercial",
     direccion: "Calle Cañada 408, Col. Jardines del Moral, León",
     foto: "img/canada-fachada.jpg"
   },
   {
     nombre: "Atelier Monteleón",
+    categoria: "Comercial",
     direccion: "5 de Febrero 309, Zona Centro, León",
     foto: "img/atelier-monteleon-1.jpg"
   },
   {
     nombre: "Casa Magnolia",
+    categoria: "Habitacional",
     direccion: "Pedro Moreno 243A, Zona Centro, León",
     foto: "img/casa-magnolia-fachada.jpg"
   },
   {
     nombre: "Casa Azul",
+    categoria: "Comercial",
     direccion: "Cesáreo Boillot 313, Col. Panorama, León",
     foto: "img/casa-azul-fachada.jpg"
   },
   {
     nombre: "Sananda Centro Holístico",
+    categoria: "Comercial",
     direccion: "Juan Bautista La Salle 603, Col. Panorama, León",
     foto: "img/sananda-fachada.jpg"
   },
   {
     nombre: "Ayurveda Consultorios",
+    categoria: "Comercial",
     direccion: "Puerto de Palos 122, Col. Arbide, León",
     foto: "img/ayurveda-fachada.jpg"
   },
   {
     nombre: "Lofts Arts",
+    categoria: "Habitacional",
     direccion: "Juan Bautista La Salle 509, Col. Panorama, León",
     foto: "img/lofts-arts-fachada.jpg"
   },
   {
     nombre: "Lofts Arbide",
+    categoria: "Habitacional",
     direccion: "Coahuila 705, Col. Arbide, León",
     foto: "img/lofts-arbide-fachada.jpg"
   },
   {
     nombre: "Casa Kelly",
+    categoria: "Comercial",
     direccion: "San Javier 214, Col. La Martinica, León",
     foto: "img/casa-kelly-fachada.jpg"
   },
   {
     nombre: "Casa México 205",
+    categoria: "Habitacional",
     direccion: "Av. México 205, Col. La Moderna, León",
     foto: "img/casa-mexico-205-fachada.jpg"
   },
   {
     nombre: "Casa Nativa",
+    categoria: "Comercial",
     direccion: "Valle del Mezquital 202, Col. Valle del Campestre, León",
     foto: "img/casa-nativa-fachada.jpg"
   },
   {
     nombre: "Inmensamente Wellness Center",
+    categoria: "Comercial",
     direccion: "Cesáreo Boillot 302, Col. Panorama, León",
     foto: "img/inmensamente-fachada.jpg"
   }
