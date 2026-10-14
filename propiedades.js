@@ -250,6 +250,11 @@ var PORTAFOLIO = [
     nombre: "Lofts Arbide",
     direccion: "Coahuila 705, Col. Arbide, León",
     foto: "img/lofts-arbide-fachada.jpg"
+  },
+  {
+    nombre: "Casa Kelly",
+    direccion: "San Javier 214, Col. La Martinica, León",
+    foto: "img/casa-kelly-fachada.jpg"
   }
 ];
 
