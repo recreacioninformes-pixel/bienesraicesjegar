@@ -302,5 +302,35 @@ var TERRAZAS = [
       { nombre: "Buffet Magnolia", precio: "$220", incluye: ["Pollo al gratín o pechuga en salsa", "Pasta cremosa", "Ensalada verde", "Verduras salteadas", "Postre del día"] },
       { nombre: "Premium Magnolia", precio: "$290", incluye: ["Filete de res o salmón al grill", "Ensalada mixta", "Puré de papa", "Espárragos", "Café o postre del día"] }
     ]
+  },
+  {
+    nombre: "Terraza Mural",
+    tipo: "Celebra en un espacio con historia",
+    capacidad: "Hasta 40 personas",
+    direccion: "Calzada de los Héroes 211, Zona Centro, León",
+    descripcion: "Un ambiente único en el corazón de la ciudad, ideal para tus eventos más especiales.",
+    ideal_para: [
+      "Desayunos y brunch",
+      "Cumpleaños y eventos familiares",
+      "Eventos sociales",
+      "Eventos empresariales"
+    ],
+    precios: [
+      { dias: "Domingo a jueves", precio: "$8,000" },
+      { dias: "Viernes y sábado en la noche", precio: "$10,000" },
+      { dias: "Sábado y domingo por la mañana", precio: "$7,000" }
+    ],
+    incluye: [
+      "5 horas de evento",
+      "1 hora de montaje",
+      "1 hora de desmontaje",
+      "Mobiliario para 40 personas",
+      "Limpieza antes y después del evento",
+      "Productos para baños",
+      "Una persona de apoyo y supervisión"
+    ],
+    fotos: [
+      "img/terraza-mural-1.jpg"
+    ]
   }
 ];
