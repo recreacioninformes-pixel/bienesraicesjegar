@@ -156,17 +156,51 @@ var PROPIEDADES = [
   },
   {
     nombre: "Lofts Arts",
-    tipo: "Mini lofts",
-    precio: "Desde $5,000 mensuales",
+    tipo: "Mini lofts amueblados",
+    precio: "Desde $5,500 mensuales",
     direccion: "Juan Bautista La Salle 509, Col. Panorama, León",
-    descripcion: "Mini lofts funcionales con servicios incluidos.",
+    descripcion: "Mini lofts amueblados con servicios incluidos.",
     incluye: [
+      "Amueblados",
       "Baño propio",
       "Cocineta",
       "Limpieza dos veces por semana",
       "Área de lavado"
     ],
-    fachada: []
+    titulo_unidades: "Lofts disponibles",
+    locales: [
+      {
+        nombre: "Loft 3B",
+        detalle: "Amueblado · $5,500 mensuales",
+        fotos: [
+          "img/lofts-arts-3b-1.jpg",
+          "img/lofts-arts-3b-2.jpg"
+        ]
+      },
+      {
+        nombre: "Loft 9",
+        detalle: "2 recámaras · Amueblado · $7,000 mensuales",
+        fotos: [
+          "img/lofts-arts-9-1.jpg",
+          "img/lofts-arts-9-2.jpg",
+          "img/lofts-arts-9-3.jpg",
+          "img/lofts-arts-9-4.jpg",
+          "img/lofts-arts-9-5.jpg",
+          "img/lofts-arts-9-6.jpg"
+        ]
+      },
+      {
+        nombre: "Loft 10",
+        detalle: "Amueblado · $5,500 mensuales",
+        fotos: [
+          "img/lofts-arts-10-1.jpg",
+          "img/lofts-arts-10-2.jpg",
+          "img/lofts-arts-10-3.jpg",
+          "img/lofts-arts-10-4.jpg"
+        ]
+      }
+    ],
+    fachada: ["img/lofts-arts-9-1.jpg"]
   }
 ];
 
