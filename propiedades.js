@@ -211,7 +211,13 @@ var PROPIEDADES = [
     tipo: "Habitaciones",
     precio: "Desde $3,500 mensuales",
     direccion: "Av. México 205, Col. La Moderna, León",
-    fachada: []
+    fachada: [
+      "img/casa-mexico-205-fachada.jpg",
+      "img/casa-mexico-205-1.jpg",
+      "img/casa-mexico-205-2.jpg",
+      "img/casa-mexico-205-3.jpg",
+      "img/casa-mexico-205-4.jpg"
+    ]
   }
 ];
 
@@ -270,7 +276,7 @@ var PORTAFOLIO = [
   {
     nombre: "Casa México 205",
     direccion: "Av. México 205, Col. La Moderna, León",
-    foto: ""
+    foto: "img/casa-mexico-205-fachada.jpg"
   }
 ];
 
