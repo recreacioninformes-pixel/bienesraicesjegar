@@ -633,7 +633,7 @@ footer { background: #0B0B0B; color: #FFFFFF; }
   for (var i = 0; i < baseLinks.length; i++) baseLinks[i].href = wa(BASE);
 
   /* Formulario: filtra al cliente y arma el mensaje */
-  var TIPOS = ['Habitacional', 'Comercial', 'Eventos', 'Convenio empresarial'];
+  var TIPOS = ['Habitacional', 'Comercial', 'Convenio empresarial'];
   var ZONAS = ['Panorama', 'Jardines del Moral', 'Centro', 'Arbide', 'San Jerónimo', 'Martinica', 'La Moderna', 'Valle del Campestre', 'Otra zona'];
   var estado = { tipo: '', zona: '' };
   var inPres = document.getElementById('presupuesto');
@@ -641,7 +641,7 @@ footer { background: #0B0B0B; color: #FFFFFF; }
   var btnEnviar = document.getElementById('enviar-wa');
 
   function mensajeFormulario() {
-    var l = [estado.tipo === 'Eventos' ? 'Hola, me interesa información sobre sus terrazas para eventos.' : BASE];
+    var l = [BASE];
     if (estado.tipo) l.push('Tipo de espacio: ' + estado.tipo);
     if (estado.zona) l.push('Zona: ' + estado.zona);
     var p = inPres.value.trim();
@@ -650,13 +650,7 @@ footer { background: #0B0B0B; color: #FFFFFF; }
     if (n) l.push('Mi nombre es ' + n + '.');
     return l.join('\n');
   }
-  function actualizar() {
-    var msg = mensajeFormulario();
-    /* Eventos va al WhatsApp de terrazas; lo demás al número general */
-    btnEnviar.href = estado.tipo === 'Eventos'
-      ? 'https://wa.me/524779193760?text=' + encodeURIComponent(msg)
-      : wa(msg);
-  }
+  function actualizar() { btnEnviar.href = wa(mensajeFormulario()); }
 
   function pills(contenedorId, opciones, clave) {
     var cont = document.getElementById(contenedorId);
