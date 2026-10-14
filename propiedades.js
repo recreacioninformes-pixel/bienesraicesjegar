@@ -370,7 +370,9 @@ var TERRAZAS = [
     fotos: [
       "img/terraza-mural-1.jpg",
       "img/terraza-mural-2.jpg",
-      "img/terraza-mural-3.jpg"
+      "img/terraza-mural-3.jpg",
+      "img/terraza-mural-4.jpg",
+      "img/terraza-mural-5.jpg"
     ]
   }
 ];
