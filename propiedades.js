@@ -200,7 +200,7 @@ var PROPIEDADES = [
         ]
       }
     ],
-    fachada: ["img/lofts-arts-9-1.jpg"]
+    fachada: ["img/lofts-arts-fachada.jpg"]
   }
 ];
 
@@ -244,6 +244,6 @@ var PORTAFOLIO = [
   {
     nombre: "Lofts Arts",
     direccion: "Juan Bautista La Salle 509, Col. Panorama, León",
-    foto: ""
+    foto: "img/lofts-arts-fachada.jpg"
   }
 ];
