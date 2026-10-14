@@ -166,7 +166,7 @@ var PROPIEDADES = [
     ]
   },
   {
-    nombre: "Lofts Arts",
+    nombre: "Loft Arts",
     categoria: "Habitacional",
     tipo: "Mini lofts amueblados",
     precio: "Desde $5,500 mensuales",
@@ -276,7 +276,7 @@ var PORTAFOLIO = [
     foto: "img/ayurveda-fachada.jpg"
   },
   {
-    nombre: "Lofts Arts",
+    nombre: "Loft Arts",
     categoria: "Habitacional",
     direccion: "Juan Bautista La Salle 509, Col. Panorama, León",
     foto: "img/lofts-arts-fachada.jpg"
