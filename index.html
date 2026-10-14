@@ -191,6 +191,41 @@ footer { background: #0B0B0B; color: #FFFFFF; }
 .fab { position: fixed; right: 20px; bottom: 20px; z-index: 40; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; background: var(--wa); color: #FFFFFF; border-radius: 50%; text-decoration: none; box-shadow: 0 8px 24px rgba(0,0,0,0.28); }
 .fab:hover { background: var(--wa-dark); }
 
+/* Terrazas para eventos */
+.terrazas-wrap { background: #FFFFFF; }
+.tz-list { display: flex; flex-direction: column; gap: 40px; margin-top: 48px; }
+.tz { background: var(--bg); border: 1px solid var(--line); border-radius: 4px; padding: 32px; display: flex; flex-direction: column; gap: 40px; }
+.tz-top { display: flex; flex-wrap: wrap; gap: 48px; align-items: flex-start; }
+.tz-gal { flex: 1 1 440px; min-width: 0; display: flex; flex-direction: column; gap: 10px; }
+.tz-gal > img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block; border-radius: 2px; }
+.tz .gal-thumbs button.on { border-color: var(--ink); }
+.tz-info { flex: 1 1 400px; min-width: 0; display: flex; flex-direction: column; gap: 22px; }
+.tz-tipo { font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--mute); }
+.tz-info h3 { font-weight: 800; font-size: 38px; line-height: 1.05; letter-spacing: -0.01em; margin-top: 10px; }
+.tz-cap { display: inline-block; margin-top: 14px; padding: 6px 12px; background: var(--ink); color: #FFFFFF; border-radius: 2px; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; }
+.tz-desc { font-size: 16px; line-height: 1.6; color: #333333; }
+.tz-sub { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 16px; }
+.tz .chips { margin-top: 12px; }
+.tz .chips li { padding: 8px 12px; font-size: 13px; background: #FFFFFF; }
+.tz-precios { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px; margin-top: 12px; }
+.tz-precio { background: #FFFFFF; border: 1px solid var(--line); border-radius: 2px; padding: 14px 16px; display: flex; flex-direction: column; gap: 4px; }
+.tz-precio span { font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--mute); }
+.tz-precio b { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 26px; line-height: 1.1; }
+.tz-inc ul { list-style: none; margin: 12px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px 16px; }
+.tz-inc li { position: relative; padding-left: 24px; font-size: 15px; line-height: 1.5; color: #333333; }
+.tz-inc li::before { content: ""; position: absolute; left: 2px; top: 5px; width: 6px; height: 11px; border: solid var(--ink); border-width: 0 2px 2px 0; transform: rotate(45deg); }
+.tz .prop-dir { color: #333333; }
+.tz-info .btn { min-height: 54px; font-size: 16px; }
+.tz-ban { border-top: 1px solid var(--line); padding-top: 32px; display: flex; flex-direction: column; gap: 8px; }
+.tz-ban > p { font-size: 15px; color: var(--mute); }
+.tz-menus { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-top: 16px; }
+.tz-menu { background: #FFFFFF; border: 1px solid var(--line); border-radius: 2px; padding: 22px; display: flex; flex-direction: column; gap: 6px; }
+.tz-menu h4 { font-weight: 700; font-size: 18px; }
+.tz-menu .pp { font-size: 14px; color: var(--mute); }
+.tz-menu .pp b { font-family: 'Montserrat', sans-serif; font-size: 22px; color: var(--ink); }
+.tz-menu ul { margin: 8px 0 0; padding-left: 18px; font-size: 14px; line-height: 1.6; color: #333333; }
+.service .btn { align-self: flex-start; margin-top: auto; }
+@media (max-width: 820px) { .tz { padding: 20px; gap: 28px; } .tz-info h3 { font-size: 30px; } }
 @media (max-width: 820px) {
   .nav-links { display: none; }
   .pad { padding: 64px 0; }
@@ -220,6 +255,7 @@ footer { background: #0B0B0B; color: #FFFFFF; }
       <a href="#servicios">Servicios</a>
       <a href="#propiedades">Propiedades</a>
       <a href="#disponibilidad">Disponibilidad</a>
+      <a href="#terrazas" id="nav-terrazas">Terrazas</a>
       <a href="#nosotros">Por qué JEGAR</a>
       <a href="#zonas">Zonas</a>
       <a href="#preguntas">Preguntas</a>
@@ -313,6 +349,7 @@ footer { background: #0B0B0B; color: #FFFFFF; }
         <h3>Eventos y experiencias</h3>
         <p>Ofrecemos espacios para eventos sociales, empresariales y experiencias recreativas, con opciones y servicios personalizados.</p>
         <p class="for"><strong>Ideal para:</strong> familias, empresas, instituciones y organizadores de eventos.</p>
+        <a class="btn btn-sm btn-dark" id="btn-terrazas" href="#terrazas">Conoce nuestras terrazas</a>
       </article>
       <article class="service">
         <div class="icon-tile"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="15" r="4"/><path d="M11 12l9-9"/><path d="M16 7l3 3"/><path d="M14 9l2 2"/></svg></div>
@@ -350,6 +387,17 @@ footer { background: #0B0B0B; color: #FFFFFF; }
     </div>
     <div class="prop-list" id="lista-propiedades"></div>
   </div>
+</section>
+
+<!-- TERRAZAS PARA EVENTOS (se llena desde TERRAZAS en propiedades.js) -->
+<section id="terrazas" class="pad terrazas-wrap">
+<div class="wrap">
+<div class="sec-head">
+<p class="eyebrow">Eventos y experiencias</p>
+<h2 class="h2">Terrazas para eventos</h2>
+</div>
+<div class="tz-list" id="lista-terrazas"></div>
+</div>
 </section>
 
 <!-- POR QUÉ JEGAR -->
@@ -648,6 +696,126 @@ footer { background: #0B0B0B; color: #FFFFFF; }
     art.appendChild(der);
     lista.appendChild(art);
   });
+
+/* Terrazas: se leen de TERRAZAS en propiedades.js (WhatsApp de eventos aparte) */
+var NUM_EVENTOS = '524779193760';
+var tzLista = document.getElementById('lista-terrazas');
+var tzDatos = (typeof TERRAZAS !== 'undefined' && TERRAZAS) ? TERRAZAS : [];
+if (!tzDatos.length) {
+document.getElementById('terrazas').hidden = true;
+var btnTz = document.getElementById('btn-terrazas'); if (btnTz) btnTz.hidden = true;
+var navTz = document.getElementById('nav-terrazas'); if (navTz) navTz.hidden = true;
+}
+tzDatos.forEach(function (t) {
+var art = el('article', 'tz');
+var top = el('div', 'tz-top');
+
+var gal = el('div', 'tz-gal');
+var fotos = (t.fotos || []).filter(Boolean);
+if (fotos.length) {
+var grande = el('img'); grande.src = fotos[0]; grande.alt = 'Foto de ' + t.nombre; grande.loading = 'lazy';
+gal.appendChild(grande);
+if (fotos.length > 1) {
+var tira = el('div', 'gal-thumbs');
+fotos.forEach(function (ruta, i) {
+var b = el('button', i === 0 ? 'on' : ''); b.type = 'button'; b.setAttribute('aria-label', 'Ver foto ' + (i + 1));
+var im = el('img'); im.src = ruta; im.alt = ''; im.loading = 'lazy'; b.appendChild(im);
+b.addEventListener('click', function () {
+grande.src = ruta;
+Array.prototype.forEach.call(tira.children, function (x) { x.className = ''; });
+b.className = 'on';
+});
+tira.appendChild(b);
+});
+gal.appendChild(tira);
+}
+} else {
+gal.appendChild(marcador('big', '[FOTO DE ' + String(t.nombre || '').toUpperCase() + ']'));
+}
+top.appendChild(gal);
+
+var info = el('div', 'tz-info');
+var cab = el('div');
+if (t.tipo) cab.appendChild(el('span', 'tz-tipo', t.tipo));
+cab.appendChild(el('h3', '', t.nombre || ''));
+if (t.capacidad) cab.appendChild(el('span', 'tz-cap', t.capacidad));
+info.appendChild(cab);
+if (t.descripcion) info.appendChild(el('p', 'tz-desc', t.descripcion));
+
+if (t.ideal_para && t.ideal_para.length) {
+var ip = el('div');
+ip.appendChild(el('h4', 'tz-sub', 'Ideal para'));
+var ch = el('ul', 'chips');
+t.ideal_para.forEach(function (x) { ch.appendChild(el('li', '', x)); });
+ip.appendChild(ch);
+info.appendChild(ip);
+}
+
+if (t.precios && t.precios.length) {
+var pr = el('div');
+pr.appendChild(el('h4', 'tz-sub', 'Costos'));
+var g = el('div', 'tz-precios');
+t.precios.forEach(function (x) {
+var c = el('div', 'tz-precio');
+c.appendChild(el('span', '', x.dias || ''));
+c.appendChild(el('b', '', x.precio || ''));
+g.appendChild(c);
+});
+pr.appendChild(g);
+info.appendChild(pr);
+}
+
+if (t.incluye && t.incluye.length) {
+var inc = el('div', 'tz-inc');
+inc.appendChild(el('h4', 'tz-sub', 'Todas las tarifas incluyen'));
+var ul = el('ul');
+t.incluye.forEach(function (x) { ul.appendChild(el('li', '', x)); });
+inc.appendChild(ul);
+info.appendChild(inc);
+}
+
+if (t.direccion) {
+var dir = el('div', 'prop-dir');
+dir.appendChild(icon('i-pin', 22));
+dir.appendChild(el('p', '', t.direccion));
+info.appendChild(dir);
+}
+
+var a = el('a', 'btn btn-wa');
+a.href = 'https://wa.me/' + NUM_EVENTOS + '?text=' + encodeURIComponent('Hola, quiero cotizar un evento en ' + t.nombre + '.');
+a.target = '_blank'; a.rel = 'noopener';
+a.appendChild(icon('i-wa', 22));
+a.appendChild(document.createTextNode('Cotizar mi evento'));
+info.appendChild(a);
+top.appendChild(info);
+art.appendChild(top);
+
+if (t.banquetes && t.banquetes.length) {
+var ban = el('div', 'tz-ban');
+ban.appendChild(el('h4', 'tz-sub', t.titulo_banquetes || 'Banquetes'));
+if (t.nota_banquetes) ban.appendChild(el('p', '', t.nota_banquetes));
+var ms = el('div', 'tz-menus');
+t.banquetes.forEach(function (m) {
+var c = el('div', 'tz-menu');
+c.appendChild(el('h4', '', m.nombre || ''));
+var pp = el('p', 'pp');
+pp.appendChild(document.createTextNode('Desde '));
+pp.appendChild(el('b', '', m.precio || ''));
+pp.appendChild(document.createTextNode(' por persona'));
+c.appendChild(pp);
+if (m.incluye && m.incluye.length) {
+var u = el('ul');
+m.incluye.forEach(function (x) { u.appendChild(el('li', '', x)); });
+c.appendChild(u);
+}
+ms.appendChild(c);
+});
+ban.appendChild(ms);
+art.appendChild(ban);
+}
+
+tzLista.appendChild(art);
+});
 })();
 </script>
 </body>
