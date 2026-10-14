@@ -532,7 +532,8 @@ footer { background: #0B0B0B; color: #FFFFFF; }
   <svg width="30" height="30" aria-hidden="true"><use href="#i-wa"/></svg>
 </a>
 
-<script src="propiedades.js"></script>
+<!-- propiedades.js se carga siempre fresco para que los cambios se vean al momento -->
+<script>document.write('<script src="propiedades.js?v=' + Date.now() + '"><\/script>');</script>
 <script>
 (function () {
   'use strict';
