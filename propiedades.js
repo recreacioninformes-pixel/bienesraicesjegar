@@ -278,6 +278,11 @@ var PORTAFOLIO = [
     nombre: "Casa México 205",
     direccion: "Av. México 205, Col. La Moderna, León",
     foto: "img/casa-mexico-205-fachada.jpg"
+  },
+  {
+    nombre: "Casa Nativa",
+    direccion: "Valle del Mezquital 202, Col. Valle del Campestre, León",
+    foto: "img/casa-nativa-fachada.jpg"
   }
 ];
 
