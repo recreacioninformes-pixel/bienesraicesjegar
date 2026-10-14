@@ -18,6 +18,48 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
+<!-- Ficha del negocio para Google -->
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "RealEstateAgent",
+ "name": "Inmobiliaria JEGAR",
+ "url": "https://grupojegar.com/",
+ "logo": "https://grupojegar.com/img/logo-mark-black.png",
+ "image": "https://grupojegar.com/img/og-jegar.jpg",
+ "telephone": "+52 477 376 8120",
+ "email": "contacto@grupojegar.com",
+ "address": {
+  "@type": "PostalAddress",
+  "streetAddress": "Juan Bautista La Salle 104, Col. Panorama",
+  "addressLocality": "León",
+  "addressRegion": "Guanajuato",
+  "addressCountry": "MX"
+ },
+ "areaServed": [
+  "León",
+  "San Francisco del Rincón",
+  "Guanajuato"
+ ],
+ "openingHoursSpecification": [
+  {
+   "@type": "OpeningHoursSpecification",
+   "dayOfWeek": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday"
+   ],
+   "opens": "09:30",
+   "closes": "17:00"
+  }
+ ],
+ "sameAs": [
+  "https://www.facebook.com/jegarbienesraices"
+ ]
+}
+</script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -461,7 +503,7 @@ footer { background: #0B0B0B; color: #FFFFFF; }
     </div>
     <div class="why-grid">
       <div class="why"><span class="n">01</span><h3>Flexibilidad y accesibilidad</h3><p>Opciones adaptadas a diferentes necesidades y presupuestos, para que encuentres el espacio que sí te conviene.</p></div>
-      <div class="why"><span class="n">02</span><h3>Ubicaciones estratégicas</h3><p>Propiedades en zonas como Panorama, Jardines del Moral, Centro, Arbide, San Jerónimo y Martinica.</p></div>
+      <div class="why"><span class="n">02</span><h3>Ubicaciones estratégicas</h3><p>Propiedades en zonas como Panorama, Jardines del Moral, Centro, Arbide, San Jerónimo, Martinica, La Moderna y Valle del Campestre.</p></div>
       <div class="why"><span class="n">03</span><h3>Relaciones de confianza</h3><p>No solo rentamos espacios, construimos relaciones de confianza con cada inquilino y propietario.</p></div>
     </div>
   </div>
@@ -476,7 +518,7 @@ footer { background: #0B0B0B; color: #FFFFFF; }
         <h2 class="h2">Presencia en las mejores zonas de León</h2>
       </div>
       <ul class="chips">
-        <li>Panorama</li><li>Jardines del Moral</li><li>Centro</li><li>Arbide</li><li>San Jerónimo</li><li>Martinica</li>
+        <li>Panorama</li><li>Jardines del Moral</li><li>Centro</li><li>Arbide</li><li>San Jerónimo</li><li>Martinica</li><li>La Moderna</li><li>Valle del Campestre</li>
       </ul>
       <p>También atendemos municipios cercanos: <strong>San Francisco del Rincón</strong> y <strong>Guanajuato</strong>.</p>
     </div>
@@ -592,14 +634,14 @@ footer { background: #0B0B0B; color: #FFFFFF; }
 
   /* Formulario: filtra al cliente y arma el mensaje */
   var TIPOS = ['Habitacional', 'Comercial', 'Eventos', 'Convenio empresarial'];
-  var ZONAS = ['Panorama', 'Jardines del Moral', 'Centro', 'Arbide', 'San Jerónimo', 'Martinica', 'Otra zona'];
+  var ZONAS = ['Panorama', 'Jardines del Moral', 'Centro', 'Arbide', 'San Jerónimo', 'Martinica', 'La Moderna', 'Valle del Campestre', 'Otra zona'];
   var estado = { tipo: '', zona: '' };
   var inPres = document.getElementById('presupuesto');
   var inNombre = document.getElementById('nombre');
   var btnEnviar = document.getElementById('enviar-wa');
 
   function mensajeFormulario() {
-    var l = [BASE];
+    var l = [estado.tipo === 'Eventos' ? 'Hola, me interesa información sobre sus terrazas para eventos.' : BASE];
     if (estado.tipo) l.push('Tipo de espacio: ' + estado.tipo);
     if (estado.zona) l.push('Zona: ' + estado.zona);
     var p = inPres.value.trim();
@@ -608,7 +650,13 @@ footer { background: #0B0B0B; color: #FFFFFF; }
     if (n) l.push('Mi nombre es ' + n + '.');
     return l.join('\n');
   }
-  function actualizar() { btnEnviar.href = wa(mensajeFormulario()); }
+  function actualizar() {
+    var msg = mensajeFormulario();
+    /* Eventos va al WhatsApp de terrazas; lo demás al número general */
+    btnEnviar.href = estado.tipo === 'Eventos'
+      ? 'https://wa.me/524779193760?text=' + encodeURIComponent(msg)
+      : wa(msg);
+  }
 
   function pills(contenedorId, opciones, clave) {
     var cont = document.getElementById(contenedorId);
