@@ -368,12 +368,14 @@ footer { background: #0B0B0B; color: #FFFFFF; }
         <h3>Renta de espacios habitacionales</h3>
         <p>Ofrecemos habitaciones, suites, departamentos y casas en renta, con opciones adaptadas a diferentes necesidades y presupuestos.</p>
         <p class="for"><strong>Ideal para:</strong> estudiantes, profesionistas, parejas y familias.</p>
+        <a class="btn btn-sm btn-dark" href="#disponibilidad" data-ir-filtro="Habitacional">Ver espacios habitacionales</a>
       </article>
       <article class="service">
         <div class="icon-tile"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18"/><path d="M9 7h2M13 7h2M9 11h2M13 11h2"/><path d="M10 21v-4h4v4"/></svg></div>
         <h3>Renta de espacios comerciales</h3>
         <p>Contamos con oficinas, consultorios, locales y espacios corporativos en ubicaciones estratégicas para impulsar negocios.</p>
         <p class="for"><strong>Ideal para:</strong> emprendedores, profesionistas, empresas y corporativos.</p>
+        <a class="btn btn-sm btn-dark" href="#disponibilidad" data-ir-filtro="Comercial">Ver espacios comerciales</a>
       </article>
       <article class="service">
         <div class="icon-tile"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16"/><path d="M3 10h18M8 3v4M16 3v4"/><path d="M12 13l1.2 2.4 2.6.4-1.9 1.8.5 2.6-2.4-1.3-2.4 1.3.5-2.6-1.9-1.8 2.6-.4z"/></svg></div>
@@ -663,6 +665,7 @@ footer { background: #0B0B0B; color: #FFFFFF; }
       var b = el('button', 'filtro', op[0]);
       b.type = 'button';
       b.setAttribute('aria-pressed', op[1] === '' ? 'true' : 'false');
+      b.setAttribute('data-cat', op[1]);
       b.addEventListener('click', function () {
         botones.forEach(function (x) { x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
         items.forEach(function (x) { x.el.hidden = op[1] !== '' && x.cats.indexOf(op[1]) === -1; });
@@ -800,6 +803,20 @@ footer { background: #0B0B0B; color: #FFFFFF; }
     lista.appendChild(art);
   });
   filtros(lista, dispItems);
+
+  /* Botones de Servicios: llevan a Disponibilidad ya filtrada */
+  var irFiltro = document.querySelectorAll('[data-ir-filtro]');
+  for (var q = 0; q < irFiltro.length; q++) {
+    irFiltro[q].addEventListener('click', function (ev) {
+      var cat = this.getAttribute('data-ir-filtro');
+      var bf = document.querySelector('#disponibilidad .filtro[data-cat="' + cat + '"]');
+      if (bf) bf.click();
+      var hay = dispItems.some(function (x) { return x.cats.indexOf(cat) > -1; });
+      if (!hay) return;
+      ev.preventDefault();
+      document.getElementById('disponibilidad').scrollIntoView({ behavior: 'smooth' });
+    });
+  }
 
 /* Terrazas: se leen de TERRAZAS en propiedades.js (WhatsApp de eventos aparte) */
 var NUM_EVENTOS = '524779193760';
