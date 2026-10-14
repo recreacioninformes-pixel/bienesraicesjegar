@@ -234,34 +234,10 @@ var PROPIEDADES = [
 
 var PORTAFOLIO = [
   {
-    nombre: "Urban Center",
-    categoria: "Comercial",
-    direccion: "Blvd. Algeciras 1402, Col. Arbide, León",
-    foto: "img/urban-center-fachada.jpg"
-  },
-  {
-    nombre: "Cañada Wellness Center",
-    categoria: "Comercial",
-    direccion: "Calle Cañada 408, Col. Jardines del Moral, León",
-    foto: "img/canada-fachada.jpg"
-  },
-  {
-    nombre: "Atelier Monteleón",
-    categoria: "Comercial",
-    direccion: "5 de Febrero 309, Zona Centro, León",
-    foto: "img/atelier-monteleon-1.jpg"
-  },
-  {
-    nombre: "Casa Magnolia",
+    nombre: "Loft Arts",
     categoria: "Habitacional",
-    direccion: "Pedro Moreno 243A, Zona Centro, León",
-    foto: "img/casa-magnolia-fachada.jpg"
-  },
-  {
-    nombre: "Casa Azul",
-    categoria: "Comercial",
-    direccion: "Cesáreo Boillot 313, Col. Panorama, León",
-    foto: "img/casa-azul-fachada.jpg"
+    direccion: "Juan Bautista La Salle 509, Col. Panorama, León",
+    foto: "img/lofts-arts-fachada.jpg"
   },
   {
     nombre: "Sananda Centro Holístico",
@@ -270,34 +246,40 @@ var PORTAFOLIO = [
     foto: "img/sananda-fachada.jpg"
   },
   {
-    nombre: "Ayurveda Consultorios",
+    nombre: "Panorama 321",
+    categoria: "Habitacional",
+    direccion: "Av. Panorama 321, Col. Panorama, León",
+    foto: ""
+  },
+  {
+    nombre: "Boillot 129",
+    categoria: "Habitacional",
+    direccion: "Cesáreo Boillot 129, Col. Panorama, León",
+    foto: ""
+  },
+  {
+    nombre: "Arquitectos 208",
     categoria: "Comercial",
-    direccion: "Puerto de Palos 122, Col. Arbide, León",
-    foto: "img/ayurveda-fachada.jpg"
+    direccion: "Arquitectos 208, Col. Panorama, León",
+    foto: ""
   },
   {
-    nombre: "Loft Arts",
-    categoria: "Habitacional",
-    direccion: "Juan Bautista La Salle 509, Col. Panorama, León",
-    foto: "img/lofts-arts-fachada.jpg"
-  },
-  {
-    nombre: "Lofts Arbide",
-    categoria: "Habitacional",
-    direccion: "Coahuila 705, Col. Arbide, León",
-    foto: "img/lofts-arbide-fachada.jpg"
-  },
-  {
-    nombre: "Casa Kelly",
+    nombre: "Casa Azul",
     categoria: "Comercial",
-    direccion: "San Javier 214, Col. La Martinica, León",
-    foto: "img/casa-kelly-fachada.jpg"
+    direccion: "Cesáreo Boillot 313, Col. Panorama, León",
+    foto: "img/casa-azul-fachada.jpg"
   },
   {
-    nombre: "Casa México 205",
+    nombre: "Inmensamente Wellness Center",
+    categoria: "Comercial",
+    direccion: "Cesáreo Boillot 302, Col. Panorama, León",
+    foto: "img/inmensamente-fachada.jpg"
+  },
+  {
+    nombre: "La Salle 207",
     categoria: "Habitacional",
-    direccion: "Av. México 205, Col. La Moderna, León",
-    foto: "img/casa-mexico-205-fachada.jpg"
+    direccion: "Juan Bautista La Salle 207, Col. Panorama, León",
+    foto: ""
   },
   {
     nombre: "Casa Nativa",
@@ -306,10 +288,112 @@ var PORTAFOLIO = [
     foto: "img/casa-nativa-fachada.jpg"
   },
   {
-    nombre: "Inmensamente Wellness Center",
+    nombre: "Punto Roca",
     categoria: "Comercial",
-    direccion: "Cesáreo Boillot 302, Col. Panorama, León",
-    foto: "img/inmensamente-fachada.jpg"
+    direccion: "De la Roca 204, Col. Jardines del Moral, León",
+    foto: ""
+  },
+  {
+    nombre: "Casa Kelly",
+    categoria: "Comercial",
+    direccion: "San Javier 214, Col. La Martinica, León",
+    foto: "img/casa-kelly-fachada.jpg"
+  },
+  {
+    nombre: "Esquina Andrade",
+    categoria: "Comercial",
+    direccion: "Madrid 401, Col. Andrade, León",
+    foto: ""
+  },
+  {
+    nombre: "Lofts Arbide",
+    categoria: "Habitacional",
+    direccion: "Coahuila 705, Col. Arbide, León",
+    foto: "img/lofts-arbide-fachada.jpg"
+  },
+  {
+    nombre: "Esquina Arbide",
+    categoria: "Comercial",
+    direccion: "Veracruz 703, Col. Arbide, León",
+    foto: ""
+  },
+  {
+    nombre: "Suecia 112",
+    categoria: "Habitacional",
+    direccion: "Suecia 112, Col. Paraísos, León",
+    foto: ""
+  },
+  {
+    nombre: "Paraísos 115",
+    categoria: "Habitacional",
+    direccion: "Dr. Rodolfo González Hurtado 115, Col. Paraísos, León",
+    foto: ""
+  },
+  {
+    nombre: "Catemaco 509",
+    categoria: "Habitacional",
+    direccion: "Lago de Catemaco 509, Col. Lomas de la Trinidad, León",
+    foto: ""
+  },
+  {
+    nombre: "Atelier Monteleón",
+    categoria: "Comercial y habitacional",
+    direccion: "5 de Febrero 309, Zona Centro, León",
+    foto: "img/atelier-monteleon-1.jpg"
+  },
+  {
+    nombre: "Downtown León",
+    categoria: "Habitacional",
+    direccion: "Justo Sierra 509, Zona Centro, León",
+    foto: ""
+  },
+  {
+    nombre: "Casa México 205",
+    categoria: "Habitacional",
+    direccion: "Av. México 205, Col. La Moderna, León",
+    foto: "img/casa-mexico-205-fachada.jpg"
+  },
+  {
+    nombre: "Cañada Wellness Center",
+    categoria: "Comercial",
+    direccion: "Calle Cañada 408, Col. Jardines del Moral, León",
+    foto: "img/canada-fachada.jpg"
+  },
+  {
+    nombre: "Punto Panorama",
+    categoria: "Comercial",
+    direccion: "Blvd. Insurgentes 1904, León",
+    foto: ""
+  },
+  {
+    nombre: "Urban Center",
+    categoria: "Comercial",
+    direccion: "Blvd. Algeciras 1402, Col. Arbide, León",
+    foto: "img/urban-center-fachada.jpg"
+  },
+  {
+    nombre: "Casa Magnolia",
+    categoria: "Habitacional",
+    direccion: "Pedro Moreno 243A, Zona Centro, León",
+    foto: "img/casa-magnolia-fachada.jpg"
+  },
+  {
+    nombre: "Pulse Business Center",
+    categoria: "Comercial",
+    direccion: "Av. San Sebastián 530, Col. La Martinica, León",
+    foto: ""
+  },
+  {
+    nombre: "Casa Dos Once",
+    categoria: "Comercial",
+    direccion: "Calzada de los Héroes 211, Zona Centro, León",
+    foto: ""
+  },
+  {
+    nombre: "Ayurveda Consultorios",
+    categoria: "Comercial",
+    direccion: "Puerto de Palos 122, Col. Arbide, León",
+    foto: "img/ayurveda-fachada.jpg"
   }
 ];
 
