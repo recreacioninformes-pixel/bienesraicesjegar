@@ -283,6 +283,11 @@ var PORTAFOLIO = [
     nombre: "Casa Nativa",
     direccion: "Valle del Mezquital 202, Col. Valle del Campestre, León",
     foto: "img/casa-nativa-fachada.jpg"
+  },
+  {
+    nombre: "Inmensamente Wellness Center",
+    direccion: "Cesáreo Boillot 302, Col. Panorama, León",
+    foto: "img/inmensamente-fachada.jpg"
   }
 ];
 
