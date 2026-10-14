@@ -317,6 +317,12 @@ footer { background: #0B0B0B; color: #FFFFFF; }
 .redes { display: flex; flex-wrap: wrap; gap: 10px; }
 .red { display: inline-flex; align-items: center; gap: 10px; min-height: 44px; padding: 0 16px 0 12px; border: 1px solid #3A3A3A; border-radius: 2px; color: #FFFFFF; text-decoration: none; font-weight: 700; font-size: 15px; }
 .red:hover { background: #1F1F1F; border-color: #FFFFFF; }
+/* Cómo llegar */
+.mapa-link { display: inline-flex; align-items: center; gap: 8px; align-self: flex-start; min-height: 40px; padding: 0 14px 0 10px; border: 1px solid var(--ink); border-radius: 2px; color: var(--ink); text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 14px; }
+.mapa-link:hover { background: var(--ink); color: #FFFFFF; }
+.dark .mapa-link { border-color: #6B6B6B; color: #FFFFFF; }
+.dark .mapa-link:hover { background: #FFFFFF; color: var(--ink); border-color: #FFFFFF; }
+.prop-info .prop-dir + .mapa-link, .tz-info .prop-dir + .mapa-link { margin-top: -10px; }
 @media (max-width: 820px) { .tz { padding: 20px; gap: 28px; } .tz-info h3 { font-size: 30px; } }
 @media (max-width: 820px) {
   .nav-links { display: none; }
@@ -739,6 +745,17 @@ footer { background: #0B0B0B; color: #FFFFFF; }
     return b;
   }
 
+  /* Botón "Cómo llegar": abre Google Maps con la dirección */
+  function linkMapa(direccion, clase) {
+    var a = el('a', 'mapa-link ' + (clase || ''));
+    var q = /guanajuato/i.test(direccion) ? direccion : direccion + ', Guanajuato, México';
+    a.href = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(q);
+    a.target = '_blank'; a.rel = 'noopener';
+    a.appendChild(icon('i-pin', 18));
+    a.appendChild(document.createTextNode('Cómo llegar'));
+    return a;
+  }
+
   /* Categorías (Habitacional / Comercial): etiqueta y filtros */
   function catsDe(p) {
     var c = String(p.categoria || '').toLowerCase();
@@ -794,6 +811,7 @@ footer { background: #0B0B0B; color: #FFFFFF; }
       d.appendChild(icon('i-pin', 20));
       d.appendChild(el('p', '', p.direccion));
       c.appendChild(d);
+      c.appendChild(linkMapa(p.direccion));
     }
     pfLista.appendChild(c);
   });
@@ -843,6 +861,7 @@ footer { background: #0B0B0B; color: #FFFFFF; }
       dir.appendChild(icon('i-pin', 22));
       dir.appendChild(el('p', '', p.direccion));
       der.appendChild(dir);
+      der.appendChild(linkMapa(p.direccion));
     }
 
     if (p.descripcion) der.appendChild(el('p', 'prop-desc', p.descripcion));
@@ -1000,6 +1019,7 @@ var dir = el('div', 'prop-dir');
 dir.appendChild(icon('i-pin', 22));
 dir.appendChild(el('p', '', t.direccion));
 info.appendChild(dir);
+info.appendChild(linkMapa(t.direccion));
 }
 
 var a = el('a', 'btn btn-wa');
