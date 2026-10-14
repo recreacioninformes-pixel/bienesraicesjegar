@@ -330,7 +330,9 @@ var TERRAZAS = [
       "Una persona de apoyo y supervisión"
     ],
     fotos: [
-      "img/terraza-mural-1.jpg"
+      "img/terraza-mural-1.jpg",
+      "img/terraza-mural-2.jpg",
+      "img/terraza-mural-3.jpg"
     ]
   }
 ];
