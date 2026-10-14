@@ -20,7 +20,9 @@
       fachada: ["img/a.jpg", "img/b.jpg"]
    6. Para poner una etiqueta destacada (por ejemplo "Low cost"), agrega
       etiqueta: "Texto de la etiqueta",
-   7. Si una propiedad no lleva locales, borra la parte de locales y usa
+   7. Para una lista con palomitas de lo que incluye, agrega
+      incluye: ["Baño propio", "Cocineta"],
+   8. Si una propiedad no lleva locales, borra la parte de locales y usa
       descripcion: "texto corto" para describir el espacio.
 
    REGLAS
@@ -151,6 +153,20 @@ var PROPIEDADES = [
       "img/ayurveda-fachada.jpg",
       "img/ayurveda-recepcion.jpg"
     ]
+  },
+  {
+    nombre: "Lofts Arts",
+    tipo: "Mini lofts",
+    precio: "Desde $5,000 mensuales",
+    direccion: "Juan Bautista La Salle 509, Col. Panorama, León",
+    descripcion: "Mini lofts funcionales con servicios incluidos.",
+    incluye: [
+      "Baño propio",
+      "Cocineta",
+      "Limpieza dos veces por semana",
+      "Área de lavado"
+    ],
+    fachada: []
   }
 ];
 
@@ -190,5 +206,10 @@ var PORTAFOLIO = [
     nombre: "Ayurveda Consultorios",
     direccion: "Puerto de Palos 122, Col. Arbide, León",
     foto: "img/ayurveda-fachada.jpg"
+  },
+  {
+    nombre: "Lofts Arts",
+    direccion: "Juan Bautista La Salle 509, Col. Panorama, León",
+    foto: ""
   }
 ];

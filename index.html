@@ -127,6 +127,11 @@ header { background: var(--bg); border-bottom: 1px solid var(--line); position: 
 /* Etiqueta (ej. low cost) */
 .prop-badge { display: inline-block; margin-bottom: 12px; margin-right: 10px; padding: 6px 12px; background: #FFFFFF; color: #111111; border-radius: 2px; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; }
 
+/* Lista de lo que incluye */
+.prop-inc ul { list-style: none; margin: 12px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 10px 16px; }
+.prop-inc li { position: relative; padding-left: 24px; font-size: 15px; line-height: 1.5; color: #E6E6E6; }
+.prop-inc li::before { content: ""; position: absolute; left: 2px; top: 5px; width: 6px; height: 11px; border: solid #FFFFFF; border-width: 0 2px 2px 0; transform: rotate(45deg); }
+
 /* Portafolio */
 .portafolio-wrap { background: #FFFFFF; }
 .portafolio { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 24px; margin-top: 48px; }
@@ -590,6 +595,14 @@ footer { background: #0B0B0B; color: #FFFFFF; }
     }
 
     if (p.descripcion) der.appendChild(el('p', 'prop-desc', p.descripcion));
+    if (p.incluye && p.incluye.length) {
+      var inc = el('div', 'prop-inc');
+      inc.appendChild(el('h4', 'units-title', 'Incluye'));
+      var ul = el('ul');
+      p.incluye.forEach(function (t) { ul.appendChild(el('li', '', t)); });
+      inc.appendChild(ul);
+      der.appendChild(inc);
+    }
 
     if (p.locales && p.locales.length) {
       var bloque = el('div');
