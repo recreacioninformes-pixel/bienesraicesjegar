@@ -245,5 +245,10 @@ var PORTAFOLIO = [
     nombre: "Lofts Arts",
     direccion: "Juan Bautista La Salle 509, Col. Panorama, León",
     foto: "img/lofts-arts-fachada.jpg"
+  },
+  {
+    nombre: "Lofts Arbide",
+    direccion: "Coahuila 705, Col. Arbide, León",
+    foto: ""
   }
 ];
