@@ -205,6 +205,13 @@ var PROPIEDADES = [
       }
     ],
     fachada: ["img/lofts-arts-fachada.jpg"]
+  },
+  {
+    nombre: "Casa México 205",
+    tipo: "Habitaciones",
+    precio: "Desde $3,500 mensuales",
+    direccion: "Av. México 205, Col. La Moderna, León",
+    fachada: []
   }
 ];
 
@@ -259,6 +266,11 @@ var PORTAFOLIO = [
     nombre: "Casa Kelly",
     direccion: "San Javier 214, Col. La Martinica, León",
     foto: "img/casa-kelly-fachada.jpg"
+  },
+  {
+    nombre: "Casa México 205",
+    direccion: "Av. México 205, Col. La Moderna, León",
+    foto: ""
   }
 ];
 
