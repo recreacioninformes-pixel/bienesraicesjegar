@@ -234,6 +234,13 @@ var PROPIEDADES = [
 
 var PORTAFOLIO = [
   {
+    nombre: "Market Square",
+    etiqueta: "Nuevo",
+    categoria: "Comercial",
+    direccion: "",
+    foto: ""
+  },
+  {
     nombre: "Loft Arts",
     categoria: "Habitacional",
     direccion: "Juan Bautista La Salle 509, Col. Panorama, León",
@@ -362,7 +369,7 @@ var PORTAFOLIO = [
   {
     nombre: "Punto Panorama",
     categoria: "Comercial",
-    direccion: "Blvd. Insurgentes 1904, León",
+    direccion: "Blvd. Insurgentes 1904, Col. Panorama, León",
     foto: ""
   },
   {
