@@ -1029,6 +1029,16 @@ footer { background: #0B0B0B; color: #FFFFFF; }
   });
   filtros(lista, dispItems);
 
+  /* Links directos: grupojegar.com/#disponibilidad-comercial o -habitacional */
+  (function () {
+    var h = (location.hash || '').toLowerCase();
+    var cat = /comercial/.test(h) ? 'Comercial' : (/habitacional/.test(h) ? 'Habitacional' : '');
+    if (!cat || h.indexOf('disponibilidad') === -1) return;
+    var bf = document.querySelector('#disponibilidad .filtro[data-cat="' + cat + '"]');
+    if (bf) bf.click();
+    setTimeout(function () { document.getElementById('disponibilidad').scrollIntoView(); }, 50);
+  })();
+
   /* Botones de Servicios: llevan a Disponibilidad ya filtrada */
   var irFiltro = document.querySelectorAll('[data-ir-filtro]');
   for (var q = 0; q < irFiltro.length; q++) {
