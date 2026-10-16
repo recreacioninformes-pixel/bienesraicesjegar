@@ -219,11 +219,11 @@ var PROPIEDADES = [
   {
     nombre: "Catemaco 509",
     categoria: "Habitacional",
-    etiqueta: "Low cost · Promoción",
+    etiqueta: "Low cost · Promoción sin depósito",
     tipo: "Habitaciones",
     precio: "Desde $2,500 mensuales",
     direccion: "Lago de Catemaco 509, Col. Lomas de la Trinidad, León",
-    descripcion: "Habitación con baño compartido: $2,500 mensuales. Habitación con baño propio: $2,700 mensuales. Agenda una cita para conocer las habitaciones disponibles y elegir la tuya.",
+    descripcion: "Promoción sin depósito. Habitación con baño compartido: $2,500 mensuales. Habitación con baño propio: $2,700 mensuales. Agenda una cita para conocer las habitaciones disponibles y elegir la tuya.",
     fachada: [
       "img/catemaco-509-1.jpg",
       "img/catemaco-509-2.jpg",
