@@ -276,7 +276,7 @@ var PORTAFOLIO = [
     nombre: "Panorama 321",
     categoria: "Habitacional",
     direccion: "Av. Panorama 321, Col. Panorama, León",
-    foto: ""
+    foto: "img/avenida-panorama-fachada.jpg"
   },
   {
     nombre: "Boillot 129",
@@ -408,7 +408,7 @@ var PORTAFOLIO = [
     nombre: "Pulse Business Center",
     categoria: "Comercial",
     direccion: "Av. San Sebastián 530, Col. La Martinica, León",
-    foto: ""
+    foto: "img/pulse-business-center-fachada.jpg"
   },
   {
     nombre: "Casa Dos Once",
