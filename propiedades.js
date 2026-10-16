@@ -306,7 +306,7 @@ var PORTAFOLIO = [
     nombre: "La Salle 207",
     categoria: "Habitacional",
     direccion: "Juan Bautista La Salle 207, Col. Panorama, León",
-    foto: ""
+    foto: "img/salle-207-fachada.jpg"
   },
   {
     nombre: "Casa Nativa",
