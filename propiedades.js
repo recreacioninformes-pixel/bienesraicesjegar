@@ -260,20 +260,13 @@ var PROPIEDADES = [
         ]
       },
       {
-        nombre: "Loft 9",
-        detalle: "2 recámaras · Amueblado · $7,000 mensuales",
+        nombre: "Loft 6",
+        detalle: "Amueblado · $7,000 mensuales",
         fotos: [
-          "img/lofts-arts-9-1.jpg",
-          "img/lofts-arts-9-2.jpg",
-          "img/lofts-arts-9-3.jpg",
-          "img/lofts-arts-9-4.jpg",
-          "img/lofts-arts-9-5.jpg",
-          "img/lofts-arts-9-6.jpg",
-          "img/lofts-arts-9-7.jpg",
-          "img/lofts-arts-9-8.jpg",
-          "img/lofts-arts-9-9.jpg",
-          "img/lofts-arts-9-10.jpg",
-          "img/lofts-arts-9-11.jpg"
+          "img/lofts-arts-6-1.jpg",
+          "img/lofts-arts-6-2.jpg",
+          "img/lofts-arts-6-3.jpg",
+          "img/lofts-arts-6-4.jpg"
         ]
       },
       {
