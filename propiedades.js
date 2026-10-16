@@ -228,6 +228,25 @@ var PROPIEDADES = [
       "img/casa-mexico-205-3.jpg",
       "img/casa-mexico-205-4.jpg"
     ]
+  },
+  {
+    nombre: "Downtown León",
+    categoria: "Habitacional",
+    tipo: "Habitaciones",
+    precio: "Desde $3,000 mensuales",
+    direccion: "Justo Sierra 509, Zona Centro, León",
+    descripcion: "En el corazón de la Zona Centro. Citas de lunes a viernes de 9:00 a 16:00 h y sábados de 9:00 a 14:00 h.",
+    fachada: [
+      "img/downtown-leon-fachada.jpg",
+      "img/downtown-leon-1.jpg",
+      "img/downtown-leon-2.jpg",
+      "img/downtown-leon-3.jpg",
+      "img/downtown-leon-4.jpg",
+      "img/downtown-leon-5.jpg",
+      "img/downtown-leon-6.jpg",
+      "img/downtown-leon-7.jpg",
+      "img/downtown-leon-8.jpg"
+    ]
   }
 ];
 
@@ -352,7 +371,7 @@ var PORTAFOLIO = [
     nombre: "Downtown León",
     categoria: "Habitacional",
     direccion: "Justo Sierra 509, Zona Centro, León",
-    foto: ""
+    foto: "img/downtown-leon-fachada.jpg"
   },
   {
     nombre: "Casa México 205",
