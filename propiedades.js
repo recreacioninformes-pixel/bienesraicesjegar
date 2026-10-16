@@ -423,7 +423,7 @@ var PORTAFOLIO = [
     nombre: "Suecia 112",
     categoria: "Habitacional",
     direccion: "Suecia 112, Col. Paraísos, León",
-    foto: ""
+    foto: "img/suecia-112-fachada.jpg"
   },
   {
     nombre: "Paraísos 115",
