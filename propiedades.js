@@ -166,6 +166,20 @@ var PROPIEDADES = [
     ]
   },
   {
+    nombre: "Casa Kelly",
+    categoria: "Comercial",
+    tipo: "Espacio comercial",
+    precio: "$6,500 mensuales",
+    direccion: "San Javier 214, Col. La Martinica, León",
+    fachada: [
+      "img/casa-kelly-fachada-2.jpg",
+      "img/casa-kelly-espacio-1.jpg",
+      "img/casa-kelly-comedor.jpg",
+      "img/casa-kelly-patio-cocina.jpg",
+      "img/casa-kelly-recepcion.jpg"
+    ]
+  },
+  {
     nombre: "Loft Arts",
     categoria: "Habitacional",
     tipo: "Mini lofts amueblados",
@@ -324,7 +338,7 @@ var PORTAFOLIO = [
     nombre: "Casa Kelly",
     categoria: "Comercial",
     direccion: "San Javier 214, Col. La Martinica, León",
-    foto: "img/casa-kelly-fachada.jpg"
+    foto: "img/casa-kelly-fachada-2.jpg"
   },
   {
     nombre: "Esquina Andrade",
