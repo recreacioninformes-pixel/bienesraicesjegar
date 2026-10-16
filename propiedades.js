@@ -218,6 +218,7 @@ var PROPIEDADES = [
     nombre: "Casa México 205",
     categoria: "Habitacional",
     tipo: "Habitaciones",
+    etiqueta: "Promoción sin depósito · Válida hasta el 31 de octubre",
     precio: "Desde $3,500 mensuales",
     direccion: "Av. México 205, Col. La Moderna, León",
     descripcion: "Ubicada enfrente del IMSS T1.",
