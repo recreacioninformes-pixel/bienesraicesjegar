@@ -217,6 +217,25 @@ var PROPIEDADES = [
     ]
   },
   {
+    nombre: "Catemaco 509",
+    categoria: "Habitacional",
+    etiqueta: "Low cost · Promoción",
+    tipo: "Habitaciones",
+    precio: "Desde $2,500 mensuales",
+    direccion: "Lago de Catemaco 509, Col. Lomas de la Trinidad, León",
+    descripcion: "Habitación con baño compartido: $2,500 mensuales. Habitación con baño propio: $2,700 mensuales. Agenda una cita para conocer las habitaciones disponibles y elegir la tuya.",
+    fachada: [
+      "img/catemaco-509-1.jpg",
+      "img/catemaco-509-2.jpg",
+      "img/catemaco-509-3.jpg",
+      "img/catemaco-509-4.jpg",
+      "img/catemaco-509-5.jpg",
+      "img/catemaco-509-6.jpg",
+      "img/catemaco-509-7.jpg",
+      "img/catemaco-509-8.jpg"
+    ]
+  },
+  {
     nombre: "Loft Arts",
     categoria: "Habitacional",
     tipo: "Mini lofts amueblados",
@@ -411,7 +430,7 @@ var PORTAFOLIO = [
     nombre: "Catemaco 509",
     categoria: "Habitacional",
     direccion: "Lago de Catemaco 509, Col. Lomas de la Trinidad, León",
-    foto: ""
+    foto: "img/catemaco-509-1.jpg"
   },
   {
     nombre: "Atelier Monteleón",
