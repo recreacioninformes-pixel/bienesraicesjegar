@@ -415,7 +415,7 @@ var PORTAFOLIO = [
   },
   {
     nombre: "Atelier Monteleón",
-    categoria: "Comercial y habitacional",
+    categoria: "Comercial",
     direccion: "5 de Febrero 309, Zona Centro, León",
     foto: "img/atelier-monteleon-1.jpg"
   },
