@@ -287,7 +287,7 @@ var PROPIEDADES = [
     tipo: "Habitaciones",
     precio: "Desde $3,000 mensuales",
     direccion: "Justo Sierra 509, Zona Centro, León",
-    descripcion: "En el corazón de la Zona Centro. Citas de lunes a viernes de 9:00 a 16:00 h y sábados de 9:00 a 14:00 h.",
+    descripcion: "En el corazón de la Zona Centro. Depósito de solo $500. Citas de lunes a viernes de 9:00 a 16:00 h y sábados de 9:00 a 14:00 h.",
     fachada: [
       "img/downtown-leon-fachada.jpg",
       "img/downtown-leon-1.jpg",
