@@ -245,7 +245,7 @@ var PROPIEDADES = [
     locales: [
       {
         nombre: "Habitación 2",
-        detalle: "$3,000 mensuales",
+        detalle: "Baño compartido · $3,000 mensuales",
         fotos: [
           "img/panorama-321-hab-2-1.jpg",
           "img/panorama-321-hab-2-2.jpg"
