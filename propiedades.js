@@ -489,7 +489,7 @@ var PORTAFOLIO = [
     nombre: "Casa Dos Once",
     categoria: "Comercial",
     direccion: "Calzada de los Héroes 211, Zona Centro, León",
-    foto: ""
+    foto: "img/casa-dos-once-pasillo.jpg"
   },
   {
     nombre: "Ayurveda Consultorios",
