@@ -181,6 +181,42 @@ var PROPIEDADES = [
     ]
   },
   {
+    nombre: "Esquina Arbide",
+    categoria: "Comercial",
+    tipo: "Consultorios y oficinas",
+    precio: "Desde $3,000 mensuales",
+    direccion: "Veracruz 703, Col. Arbide, León",
+    titulo_unidades: "Espacios disponibles",
+    locales: [
+      {
+        nombre: "Espacio 6",
+        detalle: "10 m² · $3,000 mensuales",
+        fotos: [
+          "img/esquina-arbide-espacio-6-1.jpg",
+          "img/esquina-arbide-espacio-6-2.jpg"
+        ]
+      },
+      {
+        nombre: "Espacio 7",
+        detalle: "16 m² · $3,500 mensuales",
+        fotos: [
+          "img/esquina-arbide-espacio-7-1.jpg"
+        ]
+      },
+      {
+        nombre: "Espacio 3",
+        detalle: "30 m² · Planta baja · $4,500 mensuales",
+        fotos: [
+          "img/esquina-arbide-espacio-3-1.jpg",
+          "img/esquina-arbide-espacio-3-2.jpg"
+        ]
+      }
+    ],
+    fachada: [
+      "img/esquina-arbide-fachada.jpg"
+    ]
+  },
+  {
     nombre: "Loft Arts",
     categoria: "Habitacional",
     tipo: "Mini lofts amueblados",
@@ -357,7 +393,7 @@ var PORTAFOLIO = [
     nombre: "Esquina Arbide",
     categoria: "Comercial",
     direccion: "Veracruz 703, Col. Arbide, León",
-    foto: ""
+    foto: "img/esquina-arbide-fachada.jpg"
   },
   {
     nombre: "Suecia 112",
