@@ -168,9 +168,10 @@ var PROPIEDADES = [
   {
     nombre: "Casa Kelly",
     categoria: "Comercial",
-    tipo: "Espacio comercial",
+    tipo: "Consultorio u oficina",
     precio: "$6,500 mensuales",
     direccion: "San Javier 214, Col. La Martinica, León",
+    descripcion: "Espacio de 16 m² para consultorio u oficina.",
     fachada: [
       "img/casa-kelly-fachada-2.jpg",
       "img/casa-kelly-espacio-1.jpg",
