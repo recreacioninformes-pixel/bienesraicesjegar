@@ -236,6 +236,27 @@ var PROPIEDADES = [
     ]
   },
   {
+    nombre: "Panorama 321",
+    categoria: "Habitacional",
+    tipo: "Habitaciones",
+    precio: "$3,000 mensuales",
+    direccion: "Av. Panorama 321, Col. Panorama, León",
+    titulo_unidades: "Habitación disponible",
+    locales: [
+      {
+        nombre: "Habitación 2",
+        detalle: "$3,000 mensuales",
+        fotos: [
+          "img/panorama-321-hab-2-1.jpg",
+          "img/panorama-321-hab-2-2.jpg"
+        ]
+      }
+    ],
+    fachada: [
+      "img/avenida-panorama-fachada.jpg"
+    ]
+  },
+  {
     nombre: "Lofts Arts",
     categoria: "Habitacional",
     tipo: "Mini lofts amueblados",
