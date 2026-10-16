@@ -272,7 +272,7 @@ var PROPIEDADES = [
     etiqueta: "Promoción sin depósito · Válida hasta el 31 de octubre",
     precio: "Desde $3,500 mensuales",
     direccion: "Av. México 205, Col. La Moderna, León",
-    descripcion: "Ubicada enfrente del IMSS T1.",
+    descripcion: "Ubicada enfrente del IMSS T1. Contamos con habitaciones con baño propio y con baño compartido. Agenda una cita para conocer más detalles.",
     fachada: [
       "img/casa-mexico-205-fachada.jpg",
       "img/casa-mexico-205-1.jpg",
@@ -287,7 +287,7 @@ var PROPIEDADES = [
     tipo: "Habitaciones",
     precio: "Desde $3,000 mensuales",
     direccion: "Justo Sierra 509, Zona Centro, León",
-    descripcion: "En el corazón de la Zona Centro. Depósito de solo $500. Citas de lunes a viernes de 9:00 a 16:00 h y sábados de 9:00 a 14:00 h.",
+    descripcion: "En el corazón de la Zona Centro. Todas las habitaciones cuentan con baño propio. Depósito de solo $500. Agenda una cita para conocer más detalles: lunes a viernes de 9:00 a 16:00 h y sábados de 9:00 a 14:00 h.",
     fachada: [
       "img/downtown-leon-fachada.jpg",
       "img/downtown-leon-1.jpg",
