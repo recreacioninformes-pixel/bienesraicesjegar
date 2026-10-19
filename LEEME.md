@@ -69,7 +69,7 @@ Si dejas las comillas vacías (`""`), la página muestra un espacio marcado **[F
 
 ## 4. Otros cambios
 
-- **Número de WhatsApp:** está en `index.html`. Busca `524773768120` y cámbialo (con 52 al inicio y sin espacios) en todos los lugares donde aparezca.
+- **Número de WhatsApp:** está en `index.html`. Busca `524773977315` y cámbialo (con 52 al inicio y sin espacios) en todos los lugares donde aparezca.
 - **Textos de servicios, preguntas frecuentes u otros:** también están en `index.html`. Edítalos igual que `propiedades.js`.
 - **Dirección propia con dominio** (por ejemplo `inmobiliariajegar.com`): compra el dominio y, en **Settings → Pages → Custom domain**, escribe el dominio. GitHub te indica los pasos de configuración.
 
