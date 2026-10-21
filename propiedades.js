@@ -158,7 +158,16 @@ var PROPIEDADES = [
     direccion: "Puerto de Palos 122, Col. Arbide, León",
     titulo_unidades: "Consultorio disponible",
     locales: [
-      { nombre: "Consultorio", detalle: "Desde $5,000 mensuales", foto: "img/ayurveda-consultorio.jpg" }
+      {
+      nombre: "Consultorio",
+      detalle: "Desde $5,000 mensuales",
+      fotos: [
+        "img/ayurveda-consultorio-1.jpg",
+        "img/ayurveda-consultorio-2.jpg",
+        "img/ayurveda-consultorio-3.jpg",
+        "img/ayurveda-consultorio-4.jpg"
+      ]
+    }
     ],
     fachada: [
       "img/ayurveda-fachada.jpg",
