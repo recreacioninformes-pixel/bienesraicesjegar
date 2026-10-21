@@ -115,14 +115,23 @@ var PROPIEDADES = [
     tipo: "",
     precio: "Desde $3,000 mensuales",
     direccion: "Cesáreo Boillot 313, Col. Panorama, León",
-    descripcion: "Espacios de 10 m², pensados para emprendedores que van comenzando.",
+    descripcion: "Espacios de 10 m², pensados para emprendedores que van comenzando. Las fotos de la propiedad muestran las áreas comunes.",
+    titulo_unidades: "Espacio disponible",
+    locales: [
+      {
+        nombre: "Consultorio 2",
+        detalle: "10 m² · $3,000 mensuales",
+        fotos: [
+          "img/casa-azul-consultorio-2a.jpg",
+          "img/casa-azul-consultorio-2b.jpg"
+        ]
+      }
+    ],
     fachada: [
       "img/casa-azul-fachada.jpg",
       "img/casa-azul-patio.jpg",
       "img/casa-azul-sala.jpg",
-      "img/casa-azul-pasillo.jpg",
-      "img/casa-azul-consultorio-2a.jpg",
-      "img/casa-azul-consultorio-2b.jpg"
+      "img/casa-azul-pasillo.jpg"
     ]
   },
   {
