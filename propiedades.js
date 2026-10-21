@@ -259,12 +259,12 @@ var PROPIEDADES = [
     tipo: "Lofts",
     precio: "Desde $4,500 mensuales",
     direccion: "Coahuila 705, Col. Arbide, León",
-    descripcion: "Loft de doble altura amueblado. Incluye limpieza, agua y luz. Cuenta con cocineta con parrilla de inducción, boiler eléctrico, baño completo y estacionamiento.",
+    descripcion: "Lofts amueblados con cocineta, baño completo y estacionamiento. Incluyen limpieza, agua y luz.",
     titulo_unidades: "Lofts disponibles",
     locales: [
       {
-        nombre: "Loft doble altura",
-        detalle: "Amueblado · baño completo · estacionamiento · $12,000 mensuales",
+        nombre: "Loft 6",
+        detalle: "Doble altura · amueblado · cocineta con parrilla de inducción · baño completo · estacionamiento · $12,000 mensuales",
         fotos: [
           "img/lofts-arbide-loft-1.jpg",
           "img/lofts-arbide-loft-2.jpg",
@@ -276,7 +276,7 @@ var PROPIEDADES = [
       },
       {
         nombre: "Loft 5",
-        detalle: "Cocineta · baño propio · $4,500 mensuales",
+        detalle: "Amueblado · cocineta · baño completo · estacionamiento · $4,500 mensuales",
         fotos: [
           "img/lofts-arbide-loft-5-1.jpg",
           "img/lofts-arbide-loft-5-2.jpg",
