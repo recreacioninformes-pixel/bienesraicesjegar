@@ -450,7 +450,7 @@ var PORTAFOLIO = [
     nombre: "Punto Roca",
     categoria: "Comercial",
     direccion: "De la Roca 204, Col. Jardines del Moral, León",
-    foto: ""
+    foto: "img/punto-roca-fachada.jpg"
   },
   {
     nombre: "Casa Kelly",
