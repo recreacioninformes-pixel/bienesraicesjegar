@@ -414,7 +414,7 @@ var PORTAFOLIO = [
     nombre: "Boillot 129",
     categoria: "Habitacional",
     direccion: "Cesáreo Boillot 129, Col. Panorama, León",
-    foto: ""
+    foto: "img/boillot-129-fachada.jpg"
   },
   {
     nombre: "Arquitectos 208",
