@@ -559,7 +559,7 @@ var PORTAFOLIO = [
 
 /* ==========================================================================
 TERRAZAS PARA EVENTOS (sección "Terrazas para eventos")
-El botón de cotizar de esta sección manda WhatsApp al 477 919 3760.
+El botón de cotizar de esta sección manda WhatsApp al 477 285 8643.
 Para agregar otra terraza: copia el bloque completo de Terraza Magnolia,
 desde la llave { hasta la llave } con su coma, pégalo debajo y cambia los
 textos. Si una terraza no tiene banquetes, borra la parte de banquetes.
