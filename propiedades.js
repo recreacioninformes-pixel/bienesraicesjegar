@@ -420,7 +420,7 @@ var PORTAFOLIO = [
     nombre: "Arquitectos 208",
     categoria: "Comercial",
     direccion: "Arquitectos 208, Col. Panorama, León",
-    foto: ""
+    foto: "img/arquitectos-208-fachada.jpg"
   },
   {
     nombre: "Casa Azul",
