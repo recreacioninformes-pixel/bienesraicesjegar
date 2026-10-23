@@ -37,6 +37,38 @@ var AVISO_ACTUALIZANDO = true;
 
 var PROPIEDADES = [
   {
+    nombre: "Market Square",
+    categoria: "Comercial",
+    etiqueta: "Nuevo",
+    tipo: "Pisos para oficinas o gimnasio",
+    precio: "$45,000 mensuales",
+    direccion: "Calle Dos Oriente 103, Col. San Jerónimo, León",
+    descripcion: "Dos pisos de 420 m² cada uno. Uno ideal para oficinas y otro para gimnasio.",
+    titulo_unidades: "Pisos disponibles",
+    locales: [
+      {
+        nombre: "Piso para oficinas",
+        detalle: "420 m² · $45,000 mensuales",
+        fotos: [
+          "img/market-square-oficinas-1.jpg",
+          "img/market-square-oficinas-2.jpg",
+          "img/market-square-oficinas-3.jpg"
+        ]
+      },
+      {
+        nombre: "Piso para gimnasio",
+        detalle: "420 m² de planta libre · $45,000 mensuales",
+        fotos: [
+          "img/market-square-gimnasio-1.jpg",
+          "img/market-square-gimnasio-2.jpg"
+        ]
+      }
+    ],
+    fachada: [
+      "img/market-square-recepcion.jpg"
+    ]
+  },
+  {
     nombre: "Urban Center",
     categoria: "Comercial",
     tipo: "Locales comerciales",
@@ -389,7 +421,7 @@ var PORTAFOLIO = [
     nombre: "Market Square",
     etiqueta: "Nuevo",
     categoria: "Comercial",
-    direccion: "",
+    direccion: "Calle Dos Oriente 103, Col. San Jerónimo, León",
     foto: ""
   },
   {
