@@ -893,22 +893,48 @@ footer { background: #0B0B0B; color: #FFFFFF; }
     for (var m = r[0]; m < r[1]; m += 30) if (m >= lim) out.push(pad(Math.floor(m / 60)) + ':' + pad(m % 60));
     return out;
   }
-  function pintarHoras(dia, esHoy) {
+  /* Horas libres: JEGAR One dice en qué horarios todavía hay un asesor libre.
+     Si no se puede consultar, se muestran todas (el servidor igual revisa al guardar). */
+  var citaPeticion = 0;
+  function pintarHoras(dia, esHoy, fecha) {
     var box = document.getElementById('cita-horas'); box.innerHTML = '';
     citaSel.hora = '';
     if (dia === null) { box.appendChild(el('p', 'cita-nota', 'Primero elige un día.')); return; }
-    slotsDe(dia, esHoy).forEach(function (h) {
-      var b = el('button', 'pill', h); b.type = 'button'; b.setAttribute('aria-pressed', 'false');
-      b.addEventListener('click', function () {
-        citaSel.hora = h;
-        Array.prototype.forEach.call(box.children, function (x) { x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
+    var todas = slotsDe(dia, esHoy), yo = ++citaPeticion;
+    box.appendChild(el('p', 'cita-nota', 'Buscando horarios libres...'));
+    function pintar(lista) {
+      if (yo !== citaPeticion) return;
+      box.innerHTML = '';
+      if (!lista.length) { box.appendChild(el('p', 'cita-nota', 'Ya no hay horarios libres este día. Elige otro día.')); return; }
+      lista.forEach(function (h) {
+        var b = el('button', 'pill', h); b.type = 'button'; b.setAttribute('aria-pressed', 'false');
+        b.addEventListener('click', function () {
+          citaSel.hora = h;
+          Array.prototype.forEach.call(box.children, function (x) { x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
+        });
+        box.appendChild(b);
       });
-      box.appendChild(b);
-    });
+    }
+    fetch(CITA_URL + '?fecha=' + encodeURIComponent(fecha) + '&propiedad=' + encodeURIComponent(citaInteres()))
+      .then(function (r) { if (!r.ok) throw new Error(); return r.json(); })
+      .then(function (j) {
+        var libres = (j && j.horas) || [];
+        pintar(todas.filter(function (h) { return libres.indexOf(h) > -1; }));
+      })
+      .catch(function () { pintar(todas); });
   }
+  /* Propiedad (y espacio) tal como llega a JEGAR One, para saber qué asesor la atiende */
+  function citaInteres() {
+    var u = document.getElementById('cita-unidad').value;
+    return u ? citaSel.propiedad + ' - ' + u : citaSel.propiedad;
+  }
+  var citaDiaActual = null;
+  document.getElementById('cita-unidad').addEventListener('change', function () {
+    if (citaDiaActual) pintarHoras(citaDiaActual.dia, citaDiaActual.esHoy, citaDiaActual.fecha);
+  });
   function pintarDias() {
     var box = document.getElementById('cita-dias'); box.innerHTML = '';
-    citaSel.fecha = '';
+    citaSel.fecha = ''; citaDiaActual = null;
     var hoy = ahoraLeon(), n = 0;
     for (var i = 0; i < 21 && n < 12; i++) {
       var d = new Date(Date.UTC(hoy.getUTCFullYear(), hoy.getUTCMonth(), hoy.getUTCDate() + i));
@@ -923,7 +949,8 @@ footer { background: #0B0B0B; color: #FFFFFF; }
         b.addEventListener('click', function () {
           citaSel.fecha = iso;
           Array.prototype.forEach.call(box.children, function (x) { x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
-          pintarHoras(dia, esHoy);
+          citaDiaActual = { dia: dia, esHoy: esHoy, fecha: iso };
+          pintarHoras(dia, esHoy, iso);
         });
         box.appendChild(b);
       })(d, dia, i === 0);
@@ -978,6 +1005,7 @@ footer { background: #0B0B0B; color: #FFFFFF; }
       })
     }).then(function (r) { return r.json().catch(function () { return {}; }).then(function (j) { return { ok: r.ok, j: j }; }); })
       .then(function (res) {
+        if (res.j.ocupado && citaDiaActual) pintarHoras(citaDiaActual.dia, citaDiaActual.esHoy, citaDiaActual.fecha);
         if (!res.ok || !res.j.ok) throw new Error(res.j.error || 'No pudimos registrar tu cita.');
         var f = citaSel.fecha.split('-'), d = new Date(Date.UTC(+f[0], +f[1] - 1, +f[2]));
         document.getElementById('cita-ok-txt').textContent = citaSel.propiedad + ': ' + CITA_DIAS_L[d.getUTCDay()] + ' ' + (+f[2]) + ' ' + CITA_MESES[+f[1] - 1] + ' a las ' + citaSel.hora + ' h.';
