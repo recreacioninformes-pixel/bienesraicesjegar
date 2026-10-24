@@ -11,7 +11,8 @@
   'use strict';
   var CFG = window.MEDICION || {};
   var NUM_PRINCIPAL = '524773977315';
-  var REGISTRAR_URL = 'https://mkbqnpqsqwvqouuyrmpo.supabase.co/functions/v1/registrar-clic';
+  /* El código Ref. se registra en JEGAR One por la misma función pública de citas */
+  var REGISTRAR_URL = 'https://mkbqnpqsqwvqouuyrmpo.supabase.co/functions/v1/cita-web';
   var CLAVE = 'jegar_atrib';
   var DIAS = 90;
   var PARAMS = ['gclid', 'gbraid', 'wbraid', 'fbclid', 'utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'];
@@ -82,7 +83,7 @@
     return { ref: r, nuevo: true };
   }
   function registrarClic(ref, a, mensaje) {
-    var datos = { ref: ref, pagina: location.pathname, mensaje: String(mensaje || '').slice(0, 300) };
+    var datos = { accion: 'clic', ref: ref, pagina: location.pathname, mensaje: String(mensaje || '').slice(0, 300) };
     for (var k in a) if (Object.prototype.hasOwnProperty.call(a, k)) datos[k] = a[k];
     var cuerpo = JSON.stringify(datos);
     try {
