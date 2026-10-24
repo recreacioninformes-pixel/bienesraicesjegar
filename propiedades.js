@@ -126,7 +126,7 @@ var PROPIEDADES = [
     tipo: "Suites de estancia corta y larga",
     precio: "$6,500 mensuales",
     direccion: "Pedro Moreno 243A, Zona Centro, León",
-    descripcion: "Habitaciones amuebladas con baño propio y servicios incluidos.",
+    descripcion: "Suites con baño propio y servicios incluidos.",
     incluye: [
       "Aire acondicionado",
       "Limpieza",
