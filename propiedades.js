@@ -124,9 +124,27 @@ var PROPIEDADES = [
     nombre: "Casa Magnolia",
     categoria: "Habitacional",
     tipo: "Suites de estancia corta y larga",
-    precio: "$850 por noche",
+    precio: "$6,500 mensuales",
     direccion: "Pedro Moreno 243A, Zona Centro, León",
-    descripcion: "Cotizaciones personalizadas para estancias semanales y mensuales.",
+    descripcion: "Habitaciones amuebladas con baño propio y servicios incluidos.",
+    incluye: [
+      "Aire acondicionado",
+      "Limpieza",
+      "Restaurante",
+      "Spa"
+    ],
+    titulo_unidades: "Habitaciones disponibles",
+    locales: [
+      {
+        nombre: "Habitación 1",
+        detalle: "Dos camas matrimoniales · Baño propio · $6,500 mensuales",
+        fotos: [
+          "img/casa-magnolia-hab-1-1.jpg",
+          "img/casa-magnolia-hab-1-2.jpg",
+          "img/casa-magnolia-hab-1-3.jpg"
+        ]
+      }
+    ],
     fachada: [
       "img/casa-magnolia-fachada.jpg",
       "img/casa-magnolia-1.jpg",
