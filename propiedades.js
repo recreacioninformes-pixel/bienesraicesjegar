@@ -163,6 +163,16 @@ var PROPIEDADES = [
           "img/casa-magnolia-hab-3-3.jpg",
           "img/casa-magnolia-hab-3-4.jpg"
         ]
+      },
+      {
+        nombre: "Habitación 4",
+        detalle: "Baño propio · $6,500 mensuales",
+        fotos: [
+          "img/casa-magnolia-hab-4-1.jpg",
+          "img/casa-magnolia-hab-4-2.jpg",
+          "img/casa-magnolia-hab-4-3.jpg",
+          "img/casa-magnolia-hab-4-4.jpg"
+        ]
       }
     ],
     fachada: [
