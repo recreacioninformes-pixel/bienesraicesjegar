@@ -196,6 +196,16 @@ var PROPIEDADES = [
           "img/casa-magnolia-hab-6-5.jpg",
           "img/casa-magnolia-hab-6-6.jpg"
         ]
+      },
+      {
+        nombre: "Habitación 7",
+        detalle: "Con balcón · Baño propio · $6,500 mensuales",
+        fotos: [
+          "img/casa-magnolia-hab-7-1.jpg",
+          "img/casa-magnolia-hab-7-2.jpg",
+          "img/casa-magnolia-hab-7-3.jpg",
+          "img/casa-magnolia-hab-7-4.jpg"
+        ]
       }
     ],
     fachada: [
