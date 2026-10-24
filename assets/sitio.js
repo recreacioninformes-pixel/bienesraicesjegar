@@ -70,11 +70,6 @@
     document.body.appendChild(cajaCita.firstChild);
   }
 
-  /* Aviso de "estamos actualizando": se apaga con AVISO_ACTUALIZANDO = false en propiedades.js */
-  if (typeof AVISO_ACTUALIZANDO === 'undefined' || AVISO_ACTUALIZANDO) {
-    var avisos = document.querySelectorAll('[data-aviso]');
-    for (var av = 0; av < avisos.length; av++) avisos[av].hidden = false;
-  }
 
   /* Enlaces de WhatsApp con mensaje propio (data-wa-msg) */
   var waMsg = document.querySelectorAll('[data-wa-msg]');
