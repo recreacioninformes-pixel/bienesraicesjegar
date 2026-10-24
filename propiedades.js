@@ -133,10 +133,10 @@ var PROPIEDADES = [
       "Restaurante",
       "Spa"
     ],
-    titulo_unidades: "Habitaciones disponibles",
+    titulo_unidades: "Suites disponibles",
     locales: [
       {
-        nombre: "Habitación 1",
+        nombre: "Suite 1",
         detalle: "Baño propio · $6,500 mensuales",
         fotos: [
           "img/casa-magnolia-hab-1-1.jpg",
@@ -145,7 +145,7 @@ var PROPIEDADES = [
         ]
       },
       {
-        nombre: "Habitación 2",
+        nombre: "Suite 2",
         detalle: "Baño propio · $6,500 mensuales",
         fotos: [
           "img/casa-magnolia-hab-2-1.jpg",
@@ -155,7 +155,7 @@ var PROPIEDADES = [
         ]
       },
       {
-        nombre: "Habitación 3",
+        nombre: "Suite 3",
         detalle: "Baño propio · $6,500 mensuales",
         fotos: [
           "img/casa-magnolia-hab-3-1.jpg",
@@ -165,7 +165,7 @@ var PROPIEDADES = [
         ]
       },
       {
-        nombre: "Habitación 4",
+        nombre: "Suite 4",
         detalle: "Baño propio · $6,500 mensuales",
         fotos: [
           "img/casa-magnolia-hab-4-1.jpg",
@@ -175,7 +175,7 @@ var PROPIEDADES = [
         ]
       },
       {
-        nombre: "Habitación 5",
+        nombre: "Suite 5",
         detalle: "Baño propio · $6,500 mensuales",
         fotos: [
           "img/casa-magnolia-hab-5-1.jpg",
@@ -186,7 +186,7 @@ var PROPIEDADES = [
         ]
       },
       {
-        nombre: "Habitación 6",
+        nombre: "Suite 6",
         detalle: "Con balcón · Baño propio · $6,500 mensuales",
         fotos: [
           "img/casa-magnolia-hab-6-1.jpg",
@@ -198,7 +198,7 @@ var PROPIEDADES = [
         ]
       },
       {
-        nombre: "Habitación 7",
+        nombre: "Suite 7",
         detalle: "Con balcón · Baño propio · $6,500 mensuales",
         fotos: [
           "img/casa-magnolia-hab-7-1.jpg",
@@ -208,7 +208,7 @@ var PROPIEDADES = [
         ]
       },
       {
-        nombre: "Habitación 8",
+        nombre: "Suite 8",
         detalle: "Con terraza privada · Baño propio · $6,500 mensuales",
         fotos: [
           "img/casa-magnolia-hab-8-1.jpg",
@@ -219,7 +219,7 @@ var PROPIEDADES = [
         ]
       },
       {
-        nombre: "Habitación 9",
+        nombre: "Suite 9",
         detalle: "Baño propio · $6,500 mensuales",
         fotos: [
           "img/casa-magnolia-hab-9-1.jpg",
@@ -230,7 +230,7 @@ var PROPIEDADES = [
         ]
       },
       {
-        nombre: "Habitación 10",
+        nombre: "Suite 10",
         detalle: "Baño propio · $6,500 mensuales",
         fotos: [
           "img/casa-magnolia-hab-10-1.jpg",
