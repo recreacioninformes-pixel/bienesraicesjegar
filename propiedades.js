@@ -396,6 +396,39 @@ var PROPIEDADES = [
     ]
   },
   {
+    nombre: "Coahuila 705",
+    categoria: "Comercial",
+    tipo: "Oficinas",
+    precio: "Desde $4,500 mensuales",
+    direccion: "Coahuila 705, Col. Arbide, León",
+    descripcion: "Oficinas con cocineta, baño completo y estacionamiento.",
+    titulo_unidades: "Oficinas disponibles",
+    locales: [
+      {
+        nombre: "Oficina 5",
+        detalle: "Cocineta · baño completo · estacionamiento · $4,500 mensuales",
+        fotos: [
+          "img/lofts-arbide-loft-5-1.jpg",
+          "img/lofts-arbide-loft-5-2.jpg",
+          "img/lofts-arbide-loft-5-3.jpg"
+        ]
+      },
+      {
+        nombre: "Oficina B",
+        detalle: "Disponible a partir del 1 de noviembre · Doble altura · cocineta · baño completo · estacionamiento · $10,000 mensuales",
+        fotos: [
+          "img/lofts-arbide-loft-b-1.jpg",
+          "img/lofts-arbide-loft-b-2.jpg",
+          "img/lofts-arbide-loft-b-3.jpg",
+          "img/lofts-arbide-loft-b-4.jpg"
+        ]
+      }
+    ],
+    fachada: [
+      "img/lofts-arbide-fachada.jpg"
+    ]
+  },
+  {
     nombre: "Lofts Arts",
     categoria: "Habitacional",
     tipo: "Mini lofts amueblados",
