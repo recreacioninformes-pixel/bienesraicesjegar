@@ -206,6 +206,17 @@ var PROPIEDADES = [
           "img/casa-magnolia-hab-7-3.jpg",
           "img/casa-magnolia-hab-7-4.jpg"
         ]
+      },
+      {
+        nombre: "Habitación 8",
+        detalle: "Con terraza privada · Baño propio · $6,500 mensuales",
+        fotos: [
+          "img/casa-magnolia-hab-8-1.jpg",
+          "img/casa-magnolia-hab-8-2.jpg",
+          "img/casa-magnolia-hab-8-3.jpg",
+          "img/casa-magnolia-hab-8-4.jpg",
+          "img/casa-magnolia-hab-8-5.jpg"
+        ]
       }
     ],
     fachada: [
