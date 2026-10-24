@@ -12,6 +12,20 @@
   /* Las rutas de fotos en propiedades.js son "img/...". Desde /consultorios/ esa
      ruta no existiría, así que se vuelven absolutas: "/img/...". */
   function ruta(r) { return (r && !/^(https?:)?\//.test(r)) ? '/' + r : r; }
+  /* Fotos ligeras: cada foto de img/ tiene una copia chica en img/m/ (máx. 800 px).
+     Se usan en miniaturas, tarjetas y en celular. Si la copia chica no existe
+     (foto recién subida), se carga la original sola. */
+  var CEL = !!(window.matchMedia && window.matchMedia('(max-width: 900px)').matches);
+  function mini(r) {
+    var f = ruta(r);
+    var m = /^\/img\/([^\/]+\.jpe?g)$/i.exec(f || '');
+    return m ? '/img/m/' + m[1] : f;
+  }
+  function ponFoto(im, r, chica) {
+    var full = ruta(r);
+    im.onerror = function () { if (im.src.indexOf('/img/m/') > -1) { im.src = full; } };
+    im.src = chica ? mini(r) : full;
+  }
   function $(id) { return document.getElementById(id); }
   var NUM = '524773977315';
   var BASE = 'Hola, me interesa obtener información sobre sus propiedades en renta.';
@@ -134,7 +148,7 @@
     return d;
   }
   function foto(r, alt, clase, textoMarcador, imgClase) {
-    if (r) { var im = el('img'); im.src = ruta(r); im.alt = alt; im.loading = 'lazy'; return im; }
+    if (r) { var im = el('img'); ponFoto(im, r, true); im.alt = alt; im.loading = 'lazy'; return im; }
     return marcador(clase, textoMarcador);
   }
 
@@ -426,13 +440,13 @@
     var box = el('div', 'prop-photo');
     if (!fotos.length) { box.appendChild(marcador('big', marcadorTxt)); return { el: box, ir: function () {} }; }
     var marco = el('div', 'gal-marco');
-    var grande = el('img', 'gal-grande'); grande.src = fotos[0]; grande.alt = alt; grande.loading = 'lazy';
+    var grande = el('img', 'gal-grande'); ponFoto(grande, fotos[0], CEL); grande.alt = alt; grande.loading = 'lazy';
     marco.appendChild(grande);
     box.appendChild(marco);
     var actual = 0, botones = [], contador = null;
     function ir(i) {
       actual = (i + fotos.length) % fotos.length;
-      grande.src = fotos[actual];
+      ponFoto(grande, fotos[actual], CEL);
       botones.forEach(function (x, j) { x.className = j === actual ? 'on' : ''; });
       if (contador) contador.textContent = (actual + 1) + ' / ' + fotos.length;
     }
@@ -446,7 +460,7 @@
       var tira = el('div', 'gal-thumbs');
       fotos.slice(0, 6).forEach(function (ruta, i) {
         var bt = el('button', i === 0 ? 'on' : ''); bt.type = 'button'; bt.setAttribute('aria-label', 'Ver foto ' + (i + 1));
-        var t = el('img'); t.src = ruta; t.alt = ''; t.loading = 'lazy'; bt.appendChild(t);
+        var t = el('img'); ponFoto(t, ruta, true); t.alt = ''; t.loading = 'lazy'; bt.appendChild(t);
         bt.addEventListener('click', function () { ir(i); });
         botones.push(bt);
         tira.appendChild(bt);
@@ -677,15 +691,15 @@ var top = el('div', 'tz-top');
 var gal = el('div', 'tz-gal');
 var fotos = (t.fotos || []).filter(Boolean).map(ruta);
 if (fotos.length) {
-var grande = el('img'); grande.src = fotos[0]; grande.alt = 'Foto de ' + t.nombre; grande.loading = 'lazy';
+var grande = el('img'); ponFoto(grande, fotos[0], CEL); grande.alt = 'Foto de ' + t.nombre; grande.loading = 'lazy';
 gal.appendChild(grande);
 if (fotos.length > 1) {
 var tira = el('div', 'gal-thumbs');
 fotos.forEach(function (ruta, i) {
 var b = el('button', i === 0 ? 'on' : ''); b.type = 'button'; b.setAttribute('aria-label', 'Ver foto ' + (i + 1));
-var im = el('img'); im.src = ruta; im.alt = ''; im.loading = 'lazy'; b.appendChild(im);
+var im = el('img'); ponFoto(im, ruta, true); im.alt = ''; im.loading = 'lazy'; b.appendChild(im);
 b.addEventListener('click', function () {
-grande.src = ruta;
+ponFoto(grande, ruta, CEL);
 Array.prototype.forEach.call(tira.children, function (x) { x.className = ''; });
 b.className = 'on';
 });

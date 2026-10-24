@@ -362,3 +362,10 @@ footer { background: #0B0B0B; color: #FFFFFF; }
 .legal-doc ul { padding-left: 20px; margin: 8px 0 0; }
 .legal-doc .fecha { color: var(--mute); font-size: 14px; }
 @media (max-width: 480px) { .filtro-precio { width: 100%; } .filtro-precio .field { flex: 1; min-width: 0; } }
+
+/* ---- Agregado oct-2026: foto en la primera pantalla de las páginas por tipo ---- */
+.lp-foto { display: block; width: 100%; }
+.lp-foto img { display: block; width: 100%; aspect-ratio: 16 / 9; max-height: 420px; object-fit: cover; border-radius: 2px; }
+@media (max-width: 720px) { .lp-foto img { aspect-ratio: 4 / 3; max-height: 300px; } .lp-hero { padding-top: 32px; padding-bottom: 40px; } }
+@media (min-width: 721px) { .lp-foto { order: 10; } .lp-foto img { max-height: 380px; } }
+@media (min-width: 901px) and (max-width: 1360px) { .nav-links { gap: 18px; } }

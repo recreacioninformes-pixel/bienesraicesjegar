@@ -7,6 +7,7 @@
 | `index.html` | La página completa. Normalmente no necesitas tocarla. |
 | `propiedades.js` | **Las propiedades.** Aquí cambias nombres, precios, direcciones y locales. |
 | `img/` | Las imágenes. Aquí subes las fotos de las propiedades. |
+| `img/m/` | Copias chicas de las fotos (máx. 800 px) que la página usa en celular y en miniaturas para cargar rápido. Si subes una foto nueva solo a `img/`, la página usa la original sin problema; Claude puede generar su copia chica después. |
 | `LEEME.md` | Esta guía. |
 
 ---
