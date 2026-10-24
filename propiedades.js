@@ -493,7 +493,7 @@ var PORTAFOLIO = [
     nombre: "Esquina Andrade",
     categoria: "Comercial",
     direccion: "Madrid 401, Col. Andrade, León",
-    foto: ""
+    foto: "img/esquina-andrade-fachada.jpg"
   },
   {
     nombre: "Lofts Arbide",
