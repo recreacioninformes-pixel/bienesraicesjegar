@@ -405,6 +405,17 @@ var PROPIEDADES = [
     titulo_unidades: "Oficinas disponibles",
     locales: [
       {
+        nombre: "Oficina 6",
+        detalle: "Doble altura · cocineta · baño completo · estacionamiento · $10,000 mensuales",
+        fotos: [
+          "img/coahuila-705-oficina-6-1.jpg",
+          "img/coahuila-705-oficina-6-2.jpg",
+          "img/coahuila-705-oficina-6-3.jpg",
+          "img/coahuila-705-oficina-6-4.jpg",
+          "img/coahuila-705-oficina-6-5.jpg"
+        ]
+      },
+      {
         nombre: "Oficina 5",
         detalle: "Cocineta · baño completo · estacionamiento · $4,500 mensuales",
         fotos: [
@@ -425,6 +436,7 @@ var PROPIEDADES = [
       }
     ],
     fachada: [
+      "img/coahuila-705-oficina-6-1.jpg",
       "img/lofts-arbide-fachada.jpg"
     ]
   },
