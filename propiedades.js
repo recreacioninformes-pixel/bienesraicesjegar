@@ -553,7 +553,7 @@ var PORTAFOLIO = [
     nombre: "Punto Panorama",
     categoria: "Comercial",
     direccion: "Blvd. Insurgentes 1904, Col. Panorama, León",
-    foto: ""
+    foto: "img/punto-panorama-fachada.jpg"
   },
   {
     nombre: "Urban Center",
