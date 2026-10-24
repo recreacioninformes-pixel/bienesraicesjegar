@@ -43,7 +43,7 @@ var PROPIEDADES = [
     tipo: "Piso para oficinas o gimnasio",
     precio: "$45,000 mensuales",
     direccion: "Calle Dos Oriente 103, Col. San Jerónimo, León",
-    descripcion: "Piso completo de 420 m², ideal para oficinas o gimnasio.",
+    descripcion: "420 m² listos para personalizar. Diseña tu oficina o gimnasio a tu medida: se permiten adecuaciones.",
     titulo_unidades: "Piso disponible",
     locales: [
       {
