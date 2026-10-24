@@ -228,16 +228,25 @@ var PROPIEDADES = [
           "img/casa-magnolia-hab-9-4.jpg",
           "img/casa-magnolia-hab-9-5.jpg"
         ]
+      },
+      {
+        nombre: "Habitación 10",
+        detalle: "Baño propio · $6,500 mensuales",
+        fotos: [
+          "img/casa-magnolia-hab-10-1.jpg",
+          "img/casa-magnolia-hab-10-2.jpg",
+          "img/casa-magnolia-hab-10-3.jpg",
+          "img/casa-magnolia-hab-10-4.jpg"
+        ]
       }
     ],
     fachada: [
-      "img/casa-magnolia-fachada.jpg",
-      "img/casa-magnolia-1.jpg",
-      "img/casa-magnolia-2.jpg",
-      "img/casa-magnolia-3.jpg",
-      "img/casa-magnolia-4.jpg",
-      "img/casa-magnolia-5.jpg",
-      "img/casa-magnolia-6.jpg"
+      "img/casa-magnolia-general-1.jpg",
+      "img/casa-magnolia-general-2.jpg",
+      "img/casa-magnolia-general-3.jpg",
+      "img/casa-magnolia-general-4.jpg",
+      "img/casa-magnolia-general-5.jpg",
+      "img/casa-magnolia-general-6.jpg"
     ]
   },
   {
@@ -668,7 +677,7 @@ var PORTAFOLIO = [
     nombre: "Casa Magnolia",
     categoria: "Habitacional",
     direccion: "Pedro Moreno 243A, Zona Centro, León",
-    foto: "img/casa-magnolia-fachada.jpg"
+    foto: "img/casa-magnolia-general-1.jpg"
   },
   {
     nombre: "Pulse Business Center",
