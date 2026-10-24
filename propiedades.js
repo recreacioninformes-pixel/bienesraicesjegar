@@ -137,11 +137,21 @@ var PROPIEDADES = [
     locales: [
       {
         nombre: "Habitación 1",
-        detalle: "Dos camas matrimoniales · Baño propio · $6,500 mensuales",
+        detalle: "Baño propio · $6,500 mensuales",
         fotos: [
           "img/casa-magnolia-hab-1-1.jpg",
           "img/casa-magnolia-hab-1-2.jpg",
           "img/casa-magnolia-hab-1-3.jpg"
+        ]
+      },
+      {
+        nombre: "Habitación 2",
+        detalle: "Baño propio · $6,500 mensuales",
+        fotos: [
+          "img/casa-magnolia-hab-2-1.jpg",
+          "img/casa-magnolia-hab-2-2.jpg",
+          "img/casa-magnolia-hab-2-3.jpg",
+          "img/casa-magnolia-hab-2-4.jpg"
         ]
       }
     ],
