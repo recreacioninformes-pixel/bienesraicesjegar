@@ -24,6 +24,13 @@
       incluye: ["Baño propio", "Cocineta"],
    8. Si una propiedad no lleva locales, borra la parte de locales y usa
       descripcion: "texto corto" para describir el espacio.
+   9. Si la etiqueta es una promoción con fecha de fin, agrega
+      etiqueta_vence: "2026-10-31",
+      y la etiqueta se quita sola al día siguiente (año-mes-día).
+  10. Páginas por tipo (/consultorios/, /habitaciones/, /lofts/, /market-square/):
+      cada propiedad sale sola en la que le corresponde según su "tipo".
+      Para forzarla a otra(s), agrega por ejemplo:
+      paginas: ["consultorios"],
 
    REGLAS
    - Respeta siempre las comillas "" y las comas al final de cada línea.
@@ -33,7 +40,7 @@
 
 /* AVISO "ESTAMOS ACTUALIZANDO" en Propiedades y Disponibilidad.
    true = se muestra el aviso. Cuando la página esté completa, cámbialo a false. */
-var AVISO_ACTUALIZANDO = true;
+var AVISO_ACTUALIZANDO = false;
 
 var PROPIEDADES = [
   {
@@ -264,6 +271,7 @@ var PROPIEDADES = [
     nombre: "Catemaco 509",
     categoria: "Habitacional",
     etiqueta: "Low cost · Sin depósito hasta el 31 de octubre",
+    etiqueta_vence: "2026-10-31",
     tipo: "Habitaciones",
     precio: "Desde $2,500 mensuales",
     direccion: "Lago de Catemaco 509, Col. Lomas de la Trinidad, León",
@@ -377,6 +385,7 @@ var PROPIEDADES = [
     categoria: "Habitacional",
     tipo: "Habitaciones",
     etiqueta: "Promoción sin depósito · Válida hasta el 31 de octubre",
+    etiqueta_vence: "2026-10-31",
     precio: "Desde $3,500 mensuales",
     direccion: "Av. México 205, Col. La Moderna, León",
     descripcion: "Ubicada enfrente del IMSS T1. Contamos con habitaciones con baño propio y con baño compartido. Agenda una cita para conocer más detalles.",
