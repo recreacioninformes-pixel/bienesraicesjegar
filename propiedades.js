@@ -40,6 +40,44 @@
 
 var PROPIEDADES = [
   {
+    nombre: "Casa Barranca del Refugio",
+    categoria: "Habitacional",
+    etiqueta: "Casa completa",
+    tipo: "Casa en renta",
+    precio: "$25,000 mensuales",
+    direccion: "Col. Barranca del Refugio, León",
+    descripcion: "Casa moderna y amplia de 3 niveles más roof, con vista a la barranca. Mantenimiento incluido en la renta.",
+    incluye: [
+      "3 recámaras",
+      "6 baños (2 medios)",
+      "250 m² de terreno",
+      "350 m² de construcción",
+      "Cocina integral con isla",
+      "Vestidor en recámara principal",
+      "Balcones con vista a la barranca",
+      "Jardín",
+      "Roof",
+      "Mantenimiento incluido"
+    ],
+    fachada: [
+      "img/barranca-refugio-fachada.jpg",
+      "img/barranca-refugio-sala-1.jpg",
+      "img/barranca-refugio-sala-2.jpg",
+      "img/barranca-refugio-cocina.jpg",
+      "img/barranca-refugio-jardin.jpg",
+      "img/barranca-refugio-fachada-trasera.jpg",
+      "img/barranca-refugio-recamara-1.jpg",
+      "img/barranca-refugio-recamara-2.jpg",
+      "img/barranca-refugio-vestidor-1.jpg",
+      "img/barranca-refugio-vestidor-2.jpg",
+      "img/barranca-refugio-bano.jpg",
+      "img/barranca-refugio-estancia.jpg",
+      "img/barranca-refugio-vista.jpg",
+      "img/barranca-refugio-escaleras.jpg",
+      "img/barranca-refugio-medio-bano.jpg"
+    ]
+  },
+  {
     nombre: "Market Square",
     categoria: "Comercial",
     etiqueta: "Nuevo",
@@ -527,6 +565,12 @@ var PROPIEDADES = [
 
 
 var PORTAFOLIO = [
+  {
+    nombre: "Casa Barranca del Refugio",
+    categoria: "Habitacional",
+    direccion: "Col. Barranca del Refugio, León",
+    foto: "img/barranca-refugio-fachada.jpg"
+  },
   {
     nombre: "Market Square",
     etiqueta: "Nuevo",
