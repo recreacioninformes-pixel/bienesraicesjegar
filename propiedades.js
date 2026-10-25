@@ -566,12 +566,6 @@ var PROPIEDADES = [
 
 var PORTAFOLIO = [
   {
-    nombre: "Casa Barranca del Refugio",
-    categoria: "Habitacional",
-    direccion: "Col. Barranca del Refugio, León",
-    foto: "img/barranca-refugio-fachada.jpg"
-  },
-  {
     nombre: "Market Square",
     etiqueta: "Nuevo",
     categoria: "Comercial",
