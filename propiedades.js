@@ -214,6 +214,7 @@ var PROPIEDADES = [
       }
     ],
     fachada: [
+      "img/enjambre-fachada.jpg",
       "img/san-fernando-303-oficina-15.jpg",
       "img/san-fernando-303-oficina-11.jpg",
       "img/san-fernando-303-oficina-13.jpg",
@@ -714,7 +715,7 @@ var PORTAFOLIO = [
     etiqueta: "Nuevo",
     categoria: "Comercial",
     direccion: "San Fernando 303, Col. La Martinica, León",
-    foto: ""
+    foto: "img/enjambre-fachada.jpg"
   },
   {
     nombre: "Market Square",
