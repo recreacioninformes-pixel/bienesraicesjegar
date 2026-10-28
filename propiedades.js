@@ -78,13 +78,13 @@ var PROPIEDADES = [
     ]
   },
   {
-    nombre: "Centro de Negocios San Fernando 303",
+    nombre: "Enjambre - Centro de Negocios",
     categoria: "Comercial",
     etiqueta: "Nuevo",
     tipo: "Oficinas privadas todo incluido",
     precio: "Desde $5,000 mensuales · Precios negociables",
     direccion: "San Fernando 303, Col. La Martinica, León",
-    descripcion: "16 oficinas privadas de 6 a 28 m², amuebladas y sin amueblar, con todos los servicios incluidos. Gestiona tu oficina desde la nueva App JEGAR con inteligencia artificial: tu asistente agenda citas, confirma a tus clientes por WhatsApp y reserva la sala de juntas por ti. Precios negociables, abiertos a propuestas.",
+    descripcion: "16 oficinas privadas de 6 a 28 m² con todos los servicios incluidos. Al rentar eliges si la quieres amueblada o sin amueblar. Gestiona tu oficina desde la nueva App JEGAR con inteligencia artificial: tu asistente agenda citas, confirma a tus clientes por WhatsApp y reserva la sala de juntas por ti. Precios negociables, abiertos a propuestas.",
     incluye: [
       "Luz e internet",
       "Recepción para tus clientes",
@@ -102,112 +102,112 @@ var PROPIEDADES = [
     locales: [
       {
         nombre: "Oficina 1",
-        detalle: "7.90 m² · Planta baja · Amueblada · $6,000 mensuales",
+        detalle: "7.90 m² · Planta baja · $6,000 mensuales",
         fotos: [
           "img/san-fernando-303-oficina-1.jpg"
         ]
       },
       {
         nombre: "Oficina 2",
-        detalle: "9.45 m² · Planta baja · Amueblada · $6,500 mensuales",
+        detalle: "9.45 m² · Planta baja · $6,500 mensuales",
         fotos: [
           "img/san-fernando-303-oficina-2.jpg"
         ]
       },
       {
         nombre: "Oficina 3",
-        detalle: "7.65 m² · Planta baja · Ventana que abre · semiamueblada · $5,500 mensuales",
+        detalle: "7.65 m² · Planta baja · Ventana que abre · $5,500 mensuales",
         fotos: [
           "img/san-fernando-303-oficina-3.jpg"
         ]
       },
       {
         nombre: "Oficina 4",
-        detalle: "8.25 m² · Planta baja · Amueblada · $6,000 mensuales",
+        detalle: "8.25 m² · Planta baja · $6,000 mensuales",
         fotos: [
           "img/san-fernando-303-oficina-4.jpg"
         ]
       },
       {
         nombre: "Oficina 5",
-        detalle: "6.25 m² · Planta baja · Amueblada · $5,000 mensuales",
+        detalle: "6.25 m² · Planta baja · $5,000 mensuales",
         fotos: [
           "img/san-fernando-303-oficina-5.jpg"
         ]
       },
       {
         nombre: "Oficina 6",
-        detalle: "8.40 m² · Planta baja · Amueblada · $6,000 mensuales",
+        detalle: "8.40 m² · Planta baja · $6,000 mensuales",
         fotos: [
           "img/san-fernando-303-oficina-6.jpg"
         ]
       },
       {
         nombre: "Oficina 7",
-        detalle: "9.40 m² · Planta baja · Sin amueblar · $6,500 mensuales",
+        detalle: "9.40 m² · Planta baja · $6,500 mensuales",
         fotos: [
           "img/san-fernando-303-oficina-7.jpg"
         ]
       },
       {
         nombre: "Oficina 8",
-        detalle: "6.80 m² · Planta baja · Amueblada · $5,000 mensuales",
+        detalle: "6.80 m² · Planta baja · $5,000 mensuales",
         fotos: [
           "img/san-fernando-303-oficina-8.jpg"
         ]
       },
       {
         nombre: "Oficina 9",
-        detalle: "12.00 m² · Planta baja · Ventana que abre · amueblada · $8,000 mensuales",
+        detalle: "12.00 m² · Planta baja · Ventana que abre · $8,000 mensuales",
         fotos: [
           "img/san-fernando-303-oficina-9.jpg"
         ]
       },
       {
         nombre: "Oficina 10",
-        detalle: "8.20 m² · Planta alta · Amueblada · $6,000 mensuales",
+        detalle: "8.20 m² · Planta alta · $6,000 mensuales",
         fotos: [
           "img/san-fernando-303-oficina-10.jpg"
         ]
       },
       {
         nombre: "Oficina 11",
-        detalle: "21.30 m² · Planta alta · Ventanal · amueblada · $13,000 mensuales",
+        detalle: "21.30 m² · Planta alta · Ventanal · $13,000 mensuales",
         fotos: [
           "img/san-fernando-303-oficina-11.jpg"
         ]
       },
       {
         nombre: "Oficina 12",
-        detalle: "28.50 m² · Planta alta · Ventanal · semiamueblada · $16,000 mensuales",
+        detalle: "28.50 m² · Planta alta · Ventanal · $16,000 mensuales",
         fotos: [
           "img/san-fernando-303-oficina-12.jpg"
         ]
       },
       {
         nombre: "Oficina 13",
-        detalle: "17.30 m² · Planta alta · Ventana que abre · sin amueblar · $10,500 mensuales",
+        detalle: "17.30 m² · Planta alta · Ventana que abre · $10,500 mensuales",
         fotos: [
           "img/san-fernando-303-oficina-13.jpg"
         ]
       },
       {
         nombre: "Oficina 14",
-        detalle: "20.00 m² · Planta alta · Ventana · amueblada · $12,000 mensuales",
+        detalle: "20.00 m² · Planta alta · Ventana · $12,000 mensuales",
         fotos: [
           "img/san-fernando-303-oficina-14.jpg"
         ]
       },
       {
         nombre: "Oficina 15",
-        detalle: "23.00 m² · Planta alta · Ventana a la calle · semiamueblada · $13,500 mensuales",
+        detalle: "23.00 m² · Planta alta · Ventana a la calle · $13,500 mensuales",
         fotos: [
           "img/san-fernando-303-oficina-15.jpg"
         ]
       },
       {
         nombre: "Oficina 16",
-        detalle: "21.00 m² · Planta alta · Ventana a la calle · sin amueblar · $12,500 mensuales",
+        detalle: "21.00 m² · Planta alta · Ventana a la calle · $12,500 mensuales",
         fotos: [
           "img/san-fernando-303-oficina-16.jpg"
         ]
@@ -710,7 +710,7 @@ var PROPIEDADES = [
 
 var PORTAFOLIO = [
   {
-    nombre: "Centro de Negocios San Fernando 303",
+    nombre: "Enjambre - Centro de Negocios",
     etiqueta: "Nuevo",
     categoria: "Comercial",
     direccion: "San Fernando 303, Col. La Martinica, León",
