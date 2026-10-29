@@ -16,7 +16,7 @@
    Estos códigos no son secretos: Google los muestra en la página de todos modos.
    ========================================================================== */
 var MEDICION = {
-  googleAds: "",
+  googleAds: "AW-18533987435",
   conversionCita: "",
   conversionWhatsApp: "",
   analytics: "",
