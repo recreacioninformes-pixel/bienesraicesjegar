@@ -889,86 +889,10 @@ var PORTAFOLIO = [
 
 
 /* ==========================================================================
-TERRAZAS PARA EVENTOS (sección "Terrazas para eventos")
-El botón de cotizar de esta sección manda WhatsApp al 477 285 8643.
-Para agregar otra terraza: copia el bloque completo de Terraza Magnolia,
-desde la llave { hasta la llave } con su coma, pégalo debajo y cambia los
-textos. Si una terraza no tiene banquetes, borra la parte de banquetes.
+TERRAZAS PARA EVENTOS
+Terraza Magnolia y Terraza Mural se movieron a Planet Events
+(planeteventsleon.com). Con la lista vacía, la sección de terrazas
+no aparece en grupojegar.com.
 ========================================================================== */
 
-var TERRAZAS = [
-  {
-    nombre: "Terraza Magnolia",
-    tipo: "Suites, salón y terraza",
-    capacidad: "Hasta 70 personas",
-    direccion: "Pedro Moreno 243A, Zona Centro, León",
-    descripcion: "Un espacio versátil, acogedor y rodeado de naturaleza para celebrar tus momentos más especiales.",
-    ideal_para: [
-      "Desayunos y brunch",
-      "Cumpleaños y eventos familiares",
-      "Eventos sociales",
-      "Eventos empresariales"
-    ],
-    precios: [
-      { dias: "Lunes a jueves", precio: "$4,000" },
-      { dias: "Viernes y domingo", precio: "$4,500" },
-      { dias: "Sábados", precio: "$5,000" }
-    ],
-    incluye: [
-      "5 horas de evento",
-      "1 hora de montaje",
-      "1 hora de desmontaje",
-      "Mobiliario para 70 personas",
-      "Limpieza antes y después del evento",
-      "Productos para baños",
-      "Una persona de apoyo y supervisión"
-    ],
-    fotos: [
-      "img/terraza-magnolia-1.jpg",
-      "img/terraza-magnolia-2.jpg",
-      "img/terraza-magnolia-3.jpg"
-    ],
-    titulo_banquetes: "Banquetes en Magnolia",
-    nota_banquetes: "Cuatro opciones de comida y cena, disponibles dentro de nuestro salón para complementar tu evento.",
-    banquetes: [
-      { nombre: "Barra de pizzas", precio: "$170", incluye: ["3 variedades de pizza", "Pasta a elegir", "Ensalada fresca", "Aderezos y complementos", "Postre sencillo"] },
-      { nombre: "Taquiza mexicana", precio: "$110", incluye: ["4 guisados a elegir", "Arroz y frijoles", "Nopales preparados", "Salsas y guacamole", "Tortillas"] },
-      { nombre: "Buffet Magnolia", precio: "$220", incluye: ["Pollo al gratín o pechuga en salsa", "Pasta cremosa", "Ensalada verde", "Verduras salteadas", "Postre del día"] },
-      { nombre: "Premium Magnolia", precio: "$290", incluye: ["Filete de res o salmón al grill", "Ensalada mixta", "Puré de papa", "Espárragos", "Café o postre del día"] }
-    ]
-  },
-  {
-    nombre: "Terraza Mural",
-    tipo: "Celebra en un espacio con historia",
-    capacidad: "Hasta 40 personas",
-    direccion: "Calzada de los Héroes 211, Zona Centro, León",
-    descripcion: "Un ambiente único en el corazón de la ciudad, ideal para tus eventos más especiales.",
-    ideal_para: [
-      "Desayunos y brunch",
-      "Cumpleaños y eventos familiares",
-      "Eventos sociales",
-      "Eventos empresariales"
-    ],
-    precios: [
-      { dias: "Domingo a jueves", precio: "$8,000" },
-      { dias: "Viernes y sábado en la noche", precio: "$10,000" },
-      { dias: "Sábado y domingo por la mañana", precio: "$7,000" }
-    ],
-    incluye: [
-      "5 horas de evento",
-      "1 hora de montaje",
-      "1 hora de desmontaje",
-      "Mobiliario para 40 personas",
-      "Limpieza antes y después del evento",
-      "Productos para baños",
-      "Una persona de apoyo y supervisión"
-    ],
-    fotos: [
-      "img/terraza-mural-1.jpg",
-      "img/terraza-mural-2.jpg",
-      "img/terraza-mural-3.jpg",
-      "img/terraza-mural-4.jpg",
-      "img/terraza-mural-5.jpg"
-    ]
-  }
-];
+var TERRAZAS = [];
