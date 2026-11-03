@@ -23,11 +23,12 @@
 .tns{--tg:#C9A15E;--tc:#F3EEE5;--td:#100F0D;--tm:#9A9282;background:var(--td);color:var(--tc)}
 .tns a{color:var(--tc)}
 .tns-hero{position:relative;min-height:min(86vh,760px);display:flex;align-items:flex-end;overflow:hidden}
-.tns-hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.tns-hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(16,15,13,.35) 0%,rgba(16,15,13,.55) 45%,rgba(16,15,13,.96) 100%)}
-.tns-hero .wrap{position:relative;z-index:1;padding-top:96px;padding-bottom:64px;display:flex;flex-direction:column;gap:22px;max-width:1120px}
-.tns-logo{width:min(320px,70vw);height:auto;display:block}
-.tns-pronto{align-self:flex-start;display:inline-flex;align-items:center;gap:10px;padding:8px 16px;border:1px solid var(--tg);color:var(--tg);font-family:'Montserrat',sans-serif;font-weight:700;font-size:12px;letter-spacing:.24em;text-transform:uppercase}
+.tns-hero>picture,.tns-hero>picture img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 62%}
+.tns-ia{position:absolute;top:16px;right:16px;z-index:2;padding:5px 10px;background:rgba(16,15,13,.7);color:#E4DED3;font-size:12px;font-family:'Montserrat',sans-serif;font-weight:600;letter-spacing:.04em;border-radius:2px}
+.tns-hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(16,15,13,.88) 0%,rgba(16,15,13,.6) 45%,rgba(16,15,13,.15) 100%),linear-gradient(180deg,rgba(16,15,13,0) 55%,rgba(16,15,13,.95) 100%)}
+.tns-hero .wrap{position:relative;z-index:1;padding-top:96px;padding-bottom:64px;display:flex;flex-direction:column;gap:22px}
+.tns-logo{width:min(300px,62vw);height:auto;display:block}
+.tns-pronto{align-self:flex-start;display:inline-flex;align-items:center;gap:10px;padding:8px 16px;border:1px solid var(--tg);background:rgba(16,15,13,.6);color:#E2BE7C;font-family:'Montserrat',sans-serif;font-weight:700;font-size:12px;letter-spacing:.24em;text-transform:uppercase}
 .tns-pronto::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--tg);animation:tnsp 1.8s ease-in-out infinite}
 @keyframes tnsp{50%{opacity:.25}}
 @media (prefers-reduced-motion:reduce){.tns-pronto::before{animation:none}}
@@ -50,13 +51,12 @@
 .tns-pilar .n{font-family:'Montserrat',sans-serif;font-weight:700;font-size:13px;color:var(--tg);letter-spacing:.14em}
 .tns-pilar h3{font-family:'Montserrat',sans-serif;font-weight:700;font-size:21px;color:#fff;margin:0}
 .tns-pilar p{color:#BDB5A7;margin:0;font-size:16px;line-height:1.55}
-.tns-gal{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin-top:40px}
+.tns-gal{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:40px}
 .tns-gal figure{margin:0;position:relative;overflow:hidden;background:#1C1A17}
 .tns-gal img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s ease}
 .tns-gal figure:hover img{transform:scale(1.04)}
-.tns-gal figure:nth-child(1){grid-column:span 4;aspect-ratio:16/10}
-.tns-gal figure:nth-child(2){grid-column:span 2}
-.tns-gal figure:nth-child(n+3){grid-column:span 2;aspect-ratio:4/3}
+.tns-gal figure{aspect-ratio:3/4}
+.tns-gal picture{display:block;width:100%;height:100%}
 .tns-nota{font-size:13px;color:var(--tm);margin-top:12px}
 .tns-inc{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px;margin-top:40px;padding:0;list-style:none}
 .tns-inc li{border:1px solid rgba(243,238,229,.14);padding:22px;display:flex;flex-direction:column;gap:6px}
@@ -67,7 +67,7 @@
 .tns-fund{background:linear-gradient(135deg,#1C1A17,#100F0D);border:1px solid rgba(201,161,94,.4);padding:48px;display:grid;grid-template-columns:1.4fr 1fr;gap:40px;align-items:center}
 .tns-fund p{color:#D9D2C5;font-size:17px;line-height:1.6;margin:14px 0 0}
 .tns-fund .cta-row{flex-direction:column;align-items:stretch}
-@media (max-width:860px){.tns-intro,.tns-fund{grid-template-columns:1fr;gap:28px}.tns-pilares{grid-template-columns:1fr}.tns-gal{grid-template-columns:1fr 1fr}.tns-gal figure:nth-child(n){grid-column:span 1;aspect-ratio:4/3}.tns-gal figure:nth-child(1){grid-column:span 2}.tns-sec{padding:64px 0}.tns-fund{padding:28px}.tns-hero .wrap{padding-bottom:44px}}
+@media (max-width:860px){.tns-hero::after{background:linear-gradient(180deg,rgba(16,15,13,.55) 0%,rgba(16,15,13,.8) 50%,rgba(16,15,13,.97) 100%)}.tns-intro,.tns-fund{grid-template-columns:1fr;gap:28px}.tns-pilares{grid-template-columns:1fr}.tns-gal{grid-template-columns:1fr;gap:12px}.tns-gal figure{aspect-ratio:4/5}.tns-sec{padding:64px 0}.tns-fund{padding:28px}.tns-hero .wrap{padding-bottom:44px}}
 </style>
 </head>
 <body>
@@ -103,10 +103,11 @@
 
 <main class="tns">
 <section class="tns-hero" id="inicio">
-  <img src="/img/tns-render-1.jpg" alt="Render conceptual del lounge de The Network Society" fetchpriority="high">
+  <picture><source media="(max-width: 900px)" srcset="/img/m/tns-render-3.jpg"><img src="/img/tns-render-3.jpg" alt="Imagen ilustrativa generada con IA del lounge y área de trabajo de The Network Society" fetchpriority="high"></picture>
+  <span class="tns-ia">Imagen ilustrativa generada con IA</span>
   <div class="wrap">
     <span class="tns-pronto">Próximamente</span>
-    <img class="tns-logo" src="/img/tns-logo.png" alt="The Network Society · Business Lounge">
+    <img class="tns-logo" src="/img/tns-logo-blanco.png" width="669" height="370" alt="The Network Society · Business Lounge">
     <h1>Oficinas privadas y coworking para <em>brokers y empresarios</em></h1>
     <p class="lead">Un business lounge en León donde no solo vienes a trabajar: vienes a conocer a la gente con la que vas a cerrar tu próximo negocio.</p>
     <div class="tns-meta"><span><svg width="18" height="18" aria-hidden="true"><use href="#i-pin"/></svg>Calle Dos Oriente 103, Col. San Jerónimo, León</span><span>420 m²</span></div>
@@ -138,8 +139,8 @@
   <div class="wrap">
     <p class="tns-k">Así se va a ver</p>
     <h2>Diseñado para trabajar, recibir y conectar</h2>
-    <div class="tns-gal" id="tns-gal"><!--GALERIA--></div>
-    <p class="tns-nota">Renders conceptuales. El diseño final puede variar.</p>
+    <div class="tns-gal" id="tns-gal"><figure><picture><source media="(max-width: 900px)" srcset="/img/m/tns-render-1.jpg"><img src="/img/tns-render-1.jpg" alt="Lounge, escritorios compartidos y barra de café de The Network Society (imagen generada con IA)" loading="lazy"></picture></figure><figure><picture><source media="(max-width: 900px)" srcset="/img/m/tns-render-2.jpg"><img src="/img/tns-render-2.jpg" alt="Área de escritorios y oficinas privadas de The Network Society (imagen generada con IA)" loading="lazy"></picture></figure><figure><picture><source media="(max-width: 900px)" srcset="/img/m/tns-render-3.jpg"><img src="/img/tns-render-3.jpg" alt="Vista general del business lounge de The Network Society (imagen generada con IA)" loading="lazy"></picture></figure></div>
+    <p class="tns-nota">Imágenes ilustrativas generadas con inteligencia artificial para mostrar el concepto. El espacio final puede variar.</p>
   </div>
 </section>
 

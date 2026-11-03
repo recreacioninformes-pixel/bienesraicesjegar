@@ -230,9 +230,13 @@ var PROPIEDADES = [
     tipo: "Oficinas privadas y coworking",
     precio: "Preventa para miembros fundadores",
     direccion: "Calle Dos Oriente 103, Col. San Jerónimo, León",
-    descripcion: "Club de negocios con oficinas privadas y coworking para brokers y empresarios. Trabaja, recibe a tus clientes y conecta con una comunidad que genera negocios. Lugares limitados.",
+    descripcion: "Club de negocios con oficinas privadas y coworking para brokers y empresarios. Trabaja, recibe a tus clientes y conecta con una comunidad que genera negocios. Lugares limitados. (Imágenes ilustrativas generadas con IA).",
     incluye: ["Oficinas privadas", "Mesa compartida (day pass)", "Sala de juntas", "Business lounge", "Eventos de networking", "Valet parking"],
-    fachada: [/*RENDERS*/]
+    fachada: [
+      "img/tns-render-3.jpg",
+      "img/tns-render-1.jpg",
+      "img/tns-render-2.jpg"
+    ]
   },
   {
     nombre: "Urban Center",
@@ -707,7 +711,7 @@ var PORTAFOLIO = [
     etiqueta: "Próximamente",
     categoria: "Comercial",
     direccion: "Calle Dos Oriente 103, Col. San Jerónimo, León",
-    foto: "img/tns-render-1.jpg"
+    foto: "img/tns-render-3.jpg"
   },
   {
     nombre: "Lofts Arts",
