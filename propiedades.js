@@ -640,15 +640,6 @@ var PROPIEDADES = [
     titulo_unidades: "Lofts disponibles",
     locales: [
       {
-        nombre: "Loft A",
-        detalle: "Planta baja · Amueblado · $5,500 mensuales",
-        fotos: [
-          "img/lofts-arts-a-1.jpg",
-          "img/lofts-arts-a-2.jpg",
-          "img/lofts-arts-a-3.jpg"
-        ]
-      },
-      {
         nombre: "Loft 3B",
         detalle: "Amueblado · $5,500 mensuales",
         fotos: [
