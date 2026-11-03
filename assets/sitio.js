@@ -262,7 +262,8 @@
     if (dlg.showModal) dlg.showModal(); else dlg.setAttribute('open', '');
   }
   function llenarCita(p, soloPropiedad) {
-    citaSel.propiedad = p.nombre || '';
+    /* nombre_jegar_one: nombre con el que la propiedad está dada de alta en JEGAR One (si en la web se anuncia con otro) */
+    citaSel.propiedad = p.nombre_jegar_one || p.nombre || '';
     if (p.nombre) $('cita-sub').textContent = p.nombre + (p.direccion ? ' · ' + p.direccion : '');
     var campoU = document.getElementById('cita-campo-unidad'), selU = document.getElementById('cita-unidad');
     selU.innerHTML = '';

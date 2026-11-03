@@ -223,30 +223,16 @@ var PROPIEDADES = [
     ]
   },
   {
-    nombre: "Market Square",
+    nombre: "The Network Society · Business Lounge",
+    nombre_jegar_one: "Market Square",
     categoria: "Comercial",
-    etiqueta: "Nuevo",
-    tipo: "Piso para oficinas o gimnasio",
-    precio: "$45,000 mensuales",
+    etiqueta: "Próximamente",
+    tipo: "Oficinas privadas y coworking",
+    precio: "Preventa para miembros fundadores",
     direccion: "Calle Dos Oriente 103, Col. San Jerónimo, León",
-    descripcion: "420 m² listos para personalizar. Diseña tu oficina o gimnasio a tu medida: se permiten adecuaciones.",
-    titulo_unidades: "Piso disponible",
-    locales: [
-      {
-        nombre: "Piso 3",
-        detalle: "420 m² · $45,000 mensuales",
-        fotos: [
-          "img/market-square-gimnasio-1.jpg",
-          "img/market-square-oficinas-1.jpg",
-          "img/market-square-gimnasio-2.jpg",
-          "img/market-square-oficinas-2.jpg",
-          "img/market-square-oficinas-3.jpg"
-        ]
-      }
-    ],
-    fachada: [
-      "img/market-square-recepcion.jpg"
-    ]
+    descripcion: "Club de negocios con oficinas privadas y coworking para brokers y empresarios. Trabaja, recibe a tus clientes y conecta con una comunidad que genera negocios. Lugares limitados.",
+    incluye: ["Oficinas privadas", "Mesa compartida (day pass)", "Sala de juntas", "Business lounge", "Eventos de networking", "Valet parking"],
+    fachada: [/*RENDERS*/]
   },
   {
     nombre: "Urban Center",
@@ -717,11 +703,11 @@ var PORTAFOLIO = [
     foto: "img/enjambre-fachada.jpg"
   },
   {
-    nombre: "Market Square",
-    etiqueta: "Nuevo",
+    nombre: "The Network Society · Business Lounge",
+    etiqueta: "Próximamente",
     categoria: "Comercial",
     direccion: "Calle Dos Oriente 103, Col. San Jerónimo, León",
-    foto: ""
+    foto: "img/tns-render-1.jpg"
   },
   {
     nombre: "Lofts Arts",
