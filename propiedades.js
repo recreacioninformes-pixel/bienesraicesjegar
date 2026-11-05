@@ -527,21 +527,6 @@ var PROPIEDADES = [
           "img/esquina-arbide-espacio-6-1.jpg",
           "img/esquina-arbide-espacio-6-2.jpg"
         ]
-      },
-      {
-        nombre: "Espacio 7",
-        detalle: "16 m² · $3,500 mensuales",
-        fotos: [
-          "img/esquina-arbide-espacio-7-1.jpg"
-        ]
-      },
-      {
-        nombre: "Espacio 3",
-        detalle: "30 m² · Planta baja · $4,500 mensuales",
-        fotos: [
-          "img/esquina-arbide-espacio-3-1.jpg",
-          "img/esquina-arbide-espacio-3-2.jpg"
-        ]
       }
     ],
     fachada: [
