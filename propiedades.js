@@ -694,6 +694,27 @@ var PROPIEDADES = [
       "img/downtown-leon-7.jpg",
       "img/downtown-leon-8.jpg"
     ]
+  },
+  {
+    nombre: "La Salle 207",
+    categoria: "Habitacional",
+    tipo: "Habitaciones",
+    precio: "$3,500 mensuales",
+    direccion: "Juan Bautista La Salle 207, Col. Panorama, León",
+    descripcion: "Habitación amueblada con baño compartido en la Col. Panorama. Agenda una cita para conocerla.",
+    incluye: [
+      "Amueblada",
+      "Escritorio",
+      "Clóset",
+      "Baño compartido"
+    ],
+    fachada: [
+      "img/salle-207-hab-1.jpg",
+      "img/salle-207-hab-2.jpg",
+      "img/salle-207-hab-3.jpg",
+      "img/salle-207-hab-4.jpg",
+      "img/salle-207-fachada.jpg"
+    ]
   }
 ];
 
