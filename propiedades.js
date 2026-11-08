@@ -98,13 +98,6 @@ var PROPIEDADES = [
         ]
       },
       {
-        nombre: "Oficina 6",
-        detalle: "8.40 m² · Planta baja · $6,000 mensuales",
-        fotos: [
-          "img/san-fernando-303-oficina-6.jpg"
-        ]
-      },
-      {
         nombre: "Oficina 7",
         detalle: "9.40 m² · Planta baja · $6,500 mensuales",
         fotos: [
@@ -151,13 +144,6 @@ var PROPIEDADES = [
         detalle: "17.30 m² · Planta alta · Ventana que abre · $10,500 mensuales",
         fotos: [
           "img/san-fernando-303-oficina-13.jpg"
-        ]
-      },
-      {
-        nombre: "Oficina 14",
-        detalle: "20.00 m² · Planta alta · Ventana · $12,000 mensuales",
-        fotos: [
-          "img/san-fernando-303-oficina-14.jpg"
         ]
       },
       {
@@ -576,6 +562,25 @@ var PROPIEDADES = [
     ],
     titulo_unidades: "Lofts disponibles",
     locales: [
+      {
+        nombre: "Loft A",
+        detalle: "Planta baja · Amueblado · $5,500 mensuales",
+        fotos: [
+          "img/lofts-arts-a-1.jpg",
+          "img/lofts-arts-a-2.jpg",
+          "img/lofts-arts-a-3.jpg"
+        ]
+      },
+      {
+        nombre: "Loft 10",
+        detalle: "Amueblado · $5,500 mensuales",
+        fotos: [
+          "img/lofts-arts-10-1.jpg",
+          "img/lofts-arts-10-2.jpg",
+          "img/lofts-arts-10-3.jpg",
+          "img/lofts-arts-10-4.jpg"
+        ]
+      },
       {
         nombre: "Loft 3B",
         detalle: "Amueblado · $5,500 mensuales",
