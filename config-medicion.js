@@ -18,7 +18,7 @@
 var MEDICION = {
   googleAds: "AW-18533987435",
   conversionCita: "AW-18533987435/UNioCLG7x60dEOvo2IVF",
-  conversionWhatsApp: "",
+  conversionWhatsApp: "AW-18533987435/tHOHCJiG3LQdEOvo2IVF",
   analytics: "",
   conversionesMejoradas: false
 };
