@@ -27,6 +27,16 @@
     im.src = chica ? mini(r) : full;
   }
   function $(id) { return document.getElementById(id); }
+  // Entrada escalonada de tarjetas (40ms entre cada una, tope de 6)
+  function escalonar(els) {
+    var k = 0;
+    els.forEach(function (e) {
+      if (!e || e.hidden) return;
+      e.classList.remove('entra'); void e.offsetWidth;
+      e.style.animationDelay = (Math.min(k++, 6) * 40) + 'ms';
+      e.classList.add('entra');
+    });
+  }
   var NUM = '524773977315';
   var BASE = 'Hola, me interesa obtener información sobre sus propiedades en renta.';
   function wa(msg) { return 'https://wa.me/' + NUM + '?text=' + encodeURIComponent(msg); }
@@ -391,6 +401,7 @@
       b.addEventListener('click', function () {
         botones.forEach(function (x) { x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
         items.forEach(function (x) { x.el.hidden = op[1] !== '' && x.cats.indexOf(op[1]) === -1; });
+        escalonar(items.map(function (x) { return x.el; }));
       });
       botones.push(b);
       barra.appendChild(b);
@@ -444,10 +455,17 @@
     var grande = el('img', 'gal-grande'); ponFoto(grande, fotos[0], CEL); grande.alt = alt; grande.loading = 'lazy';
     marco.appendChild(grande);
     box.appendChild(marco);
-    var actual = 0, botones = [], contador = null;
+    var actual = 0, botones = [], contador = null, tCambio = 0, tFin = 0;
     function ir(i) {
       actual = (i + fotos.length) % fotos.length;
-      ponFoto(grande, fotos[actual], CEL);
+      var r = fotos[actual];
+      grande.classList.add('cambiando');
+      clearTimeout(tCambio); clearTimeout(tFin);
+      tCambio = setTimeout(function () {
+        grande.onload = function () { grande.classList.remove('cambiando'); };
+        ponFoto(grande, r, CEL);
+        tFin = setTimeout(function () { grande.classList.remove('cambiando'); }, 600);
+      }, 90);
       botones.forEach(function (x, j) { x.className = j === actual ? 'on' : ''; });
       if (contador) contador.textContent = (actual + 1) + ' / ' + fotos.length;
     }
@@ -604,6 +622,7 @@
         x.el.hidden = !ok; if (ok) visibles++;
       });
       vacio.hidden = visibles > 0;
+      escalonar(items.map(function (x) { return x.el; }));
     }
     var barra = el('div', 'filtros filtros-pagina');
     if (zonas.length > 1) {
@@ -796,4 +815,31 @@ art.appendChild(ban);
 
 tzLista.appendChild(art);
 });
+})();
+
+// Revelado de fotos al entrar en pantalla (una sola vez)
+(function () {
+  if (!('IntersectionObserver' in window) || !('MutationObserver' in window)) return;
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var io = new IntersectionObserver(function (entradas) {
+    entradas.forEach(function (en) {
+      if (en.isIntersecting) { en.target.classList.add('visto'); io.unobserve(en.target); }
+    });
+  }, { rootMargin: '0px 0px -60px 0px' });
+  function vigilar(raiz) {
+    if (!raiz.querySelectorAll) return;
+    var lista = raiz.matches && raiz.matches('.gal-marco') ? [raiz] : [];
+    Array.prototype.push.apply(lista, raiz.querySelectorAll('.gal-marco'));
+    lista.forEach(function (m) {
+      if (m.classList.contains('revela')) return;
+      // Lo que ya está a la vista al cargar no se esconde
+      var r = m.getBoundingClientRect();
+      if (r.height && r.top < window.innerHeight && r.bottom > 0) return;
+      m.classList.add('revela'); io.observe(m);
+    });
+  }
+  vigilar(document);
+  new MutationObserver(function (cambios) {
+    cambios.forEach(function (c) { c.addedNodes.forEach(function (n) { if (n.nodeType === 1) vigilar(n); }); });
+  }).observe(document.body, { childList: true, subtree: true });
 })();
