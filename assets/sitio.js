@@ -490,6 +490,8 @@
   }
 
   var lista = document.getElementById('lista-propiedades');
+  /* Quita la versión estática (para buscadores e IAs) antes de dibujar la interactiva */
+  if (lista) { lista.innerHTML = ''; }
   var todas = (typeof PROPIEDADES !== 'undefined' && PROPIEDADES) ? PROPIEDADES : [];
   /* En una página por tipo (ej. /consultorios/) solo van las propiedades de ese tipo.
      Una propiedad puede forzar en qué páginas sale con  paginas: ["consultorios"]  */
