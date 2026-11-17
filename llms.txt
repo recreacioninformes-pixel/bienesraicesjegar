@@ -36,6 +36,7 @@
   - Oficina 3: 7.65 m² · Planta baja · Ventana que abre · $5,500 mensuales
   - Oficina 4: 8.25 m² · Planta baja · $6,000 mensuales
   - Oficina 5: 6.25 m² · Planta baja · $5,000 mensuales
+  - Oficina 6: 8.40 m² · Planta baja · $6,000 mensuales
   - Oficina 7: 9.40 m² · Planta baja · $6,500 mensuales
   - Oficina 8: 6.80 m² · Planta baja · $5,000 mensuales
   - Oficina 9: 12.00 m² · Planta baja · Ventana que abre · $8,000 mensuales
@@ -208,4 +209,4 @@ En JEGAR cada cliente es importante. Si necesitas un plazo distinto, con nuestra
 **¿Qué tipos de espacios comerciales ofrecen?**
 Disponemos de oficinas privadas, consultorios, locales comerciales y espacios corporativos adaptados a distintos giros de negocio.
 
-Precios en pesos mexicanos (MXN), por mes, sujetos a disponibilidad. Última actualización: 2026-11-09.
+Precios en pesos mexicanos (MXN), por mes, sujetos a disponibilidad. Última actualización: 2026-11-17.
