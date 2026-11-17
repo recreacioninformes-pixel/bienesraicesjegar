@@ -98,6 +98,13 @@ var PROPIEDADES = [
         ]
       },
       {
+        nombre: "Oficina 6",
+        detalle: "8.40 m² · Planta baja · $6,000 mensuales",
+        fotos: [
+          "img/san-fernando-303-oficina-6.jpg"
+        ]
+      },
+      {
         nombre: "Oficina 7",
         detalle: "9.40 m² · Planta baja · $6,500 mensuales",
         fotos: [
