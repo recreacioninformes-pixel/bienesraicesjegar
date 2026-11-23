@@ -232,23 +232,6 @@ var PROPIEDADES = [
     ]
   },
   {
-    nombre: "Atelier Monteleón",
-    categoria: "Comercial",
-    tipo: "Oficinas, consultorios y talleres creativos",
-    precio: "Desde $3,500 mensuales",
-    direccion: "5 de Febrero 309, Zona Centro, León",
-    descripcion: "Espacios de 12 m² con baño propio.",
-    fachada: [
-      "img/atelier-monteleon-1.jpg",
-      "img/atelier-monteleon-2.jpg",
-      "img/atelier-monteleon-3.jpg",
-      "img/atelier-monteleon-4.jpg",
-      "img/atelier-monteleon-5.jpg",
-      "img/atelier-monteleon-6.jpg",
-      "img/atelier-monteleon-7.jpg"
-    ]
-  },
-  {
     nombre: "Casa Magnolia",
     categoria: "Habitacional",
     tipo: "Suites de estancia corta y larga",
@@ -510,39 +493,20 @@ var PROPIEDADES = [
   },
   {
     nombre: "Coahuila 705",
-    categoria: "Comercial",
-    tipo: "Oficinas",
-    precio: "Desde $10,000 mensuales",
+    categoria: "Habitacional",
+    tipo: "Loft",
+    precio: "$6,000 mensuales",
     direccion: "Coahuila 705, Col. Arbide, León",
-    descripcion: "Oficinas con cocineta, baño propio y estacionamiento.",
-    titulo_unidades: "Oficinas disponibles",
+    descripcion: "Loft habitacional en la Col. Arbide. Agenda una cita para conocerlo.",
+    titulo_unidades: "Loft disponible",
     locales: [
       {
-        nombre: "Oficina 6",
-        detalle: "Doble altura · cocineta · baño propio · estacionamiento · $10,000 mensuales",
-        fotos: [
-          "img/coahuila-705-oficina-6-1.jpg",
-          "img/coahuila-705-oficina-6-2.jpg",
-          "img/coahuila-705-oficina-6-3.jpg",
-          "img/coahuila-705-oficina-6-4.jpg",
-          "img/coahuila-705-oficina-6-5.jpg"
-        ]
-      },
-      {
-        nombre: "Oficina B",
-        detalle: "Disponible a partir del 1 de noviembre · Doble altura · cocineta · baño propio · estacionamiento · $10,000 mensuales",
-        fotos: [
-          "img/lofts-arbide-loft-b-1.jpg",
-          "img/lofts-arbide-loft-b-2.jpg",
-          "img/lofts-arbide-loft-b-3.jpg",
-          "img/lofts-arbide-loft-b-4.jpg"
-        ]
+        nombre: "Loft 4",
+        detalle: "$6,000 mensuales",
+        fotos: ["img/lofts-arbide-fachada.jpg"]
       }
     ],
-    fachada: [
-      "img/coahuila-705-oficina-6-1.jpg",
-      "img/lofts-arbide-fachada.jpg"
-    ]
+    fachada: ["img/lofts-arbide-fachada.jpg"]
   },
   {
     nombre: "Lofts Arts",
@@ -561,15 +525,6 @@ var PROPIEDADES = [
     titulo_unidades: "Lofts disponibles",
     locales: [
       {
-        nombre: "Loft A",
-        detalle: "Planta baja · Amueblado · $5,500 mensuales",
-        fotos: [
-          "img/lofts-arts-a-1.jpg",
-          "img/lofts-arts-a-2.jpg",
-          "img/lofts-arts-a-3.jpg"
-        ]
-      },
-      {
         nombre: "Loft 10",
         detalle: "Amueblado · $5,500 mensuales",
         fotos: [
@@ -577,24 +532,6 @@ var PROPIEDADES = [
           "img/lofts-arts-10-2.jpg",
           "img/lofts-arts-10-3.jpg",
           "img/lofts-arts-10-4.jpg"
-        ]
-      },
-      {
-        nombre: "Loft 3B",
-        detalle: "Amueblado · $5,500 mensuales",
-        fotos: [
-          "img/lofts-arts-3b-1.jpg",
-          "img/lofts-arts-3b-2.jpg"
-        ]
-      },
-      {
-        nombre: "Loft 6",
-        detalle: "Amueblado · $7,000 mensuales",
-        fotos: [
-          "img/lofts-arts-6-1.jpg",
-          "img/lofts-arts-6-2.jpg",
-          "img/lofts-arts-6-3.jpg",
-          "img/lofts-arts-6-4.jpg"
         ]
       },
       {
