@@ -59,7 +59,7 @@
 - Precio: $15,000 mensuales MXN
 - Dirección: Blvd. Algeciras 1402, Col. Arbide, León, Guanajuato, México
 - Espacios disponibles:
-  - Local disponible: 50 m² · $15,000 mensuales
+  - Local 1: 50 m² · $15,000 mensuales
 
 ### Cañada Wellness Center
 - Tipo: Consultorios (Comercial)
@@ -78,15 +78,19 @@
 ### Sananda Centro Holístico
 - Precio: Desde $3,000 mensuales MXN
 - Dirección: Juan Bautista La Salle 603, Col. Panorama, León, Guanajuato, México
-- Espacio disponible:
-  - Espacio disponible: 8 m² · $3,000 mensuales
+- Espacios disponibles:
+  - Consultorio 1: 8 m² · $3,000 mensuales
+  - Cafetería: $3,000 mensuales
 
 ### Ayurveda Consultorios
 - Tipo: Consultorios (Comercial)
-- Precio: Desde $5,000 mensuales MXN
+- Precio: Desde $4,000 mensuales MXN
 - Dirección: Puerto de Palos 122, Col. Arbide, León, Guanajuato, México
-- Consultorio disponible:
-  - Consultorio: Desde $5,000 mensuales
+- Consultorios disponibles:
+  - Consultorio A: $4,000 mensuales
+  - Consultorio 7: $5,000 mensuales
+  - Consultorio 8: $5,000 mensuales
+  - Consultorio 9: $5,000 mensuales
 
 ### Casa Kelly
 - Tipo: Consultorio u oficina (Comercial)
@@ -100,6 +104,7 @@
 - Dirección: Veracruz 703, Col. Arbide, León, Guanajuato, México
 - Espacios disponibles:
   - Espacio 6: 10 m² · $3,000 mensuales
+  - Consultorio 7: $3,500 mensuales
 
 ## Espacios habitacionales disponibles en renta
 
@@ -123,9 +128,11 @@
 
 ### Catemaco 509
 - Tipo: Habitaciones (Habitacional)
-- Precio: Desde $2,500 mensuales MXN
+- Precio: $2,200 mensuales MXN
 - Dirección: Lago de Catemaco 509, Col. Lomas de la Trinidad, León, Guanajuato, México
-- Promoción sin depósito válida hasta el 31 de octubre. Habitación con baño compartido: $2,500 mensuales. Habitación con baño propio: $2,700 mensuales. Agenda una cita para conocer las habitaciones disponibles y elegir la tuya.
+- Habitación low cost en la Col. Lomas de la Trinidad. Agenda una cita para conocerla.
+- Habitación disponible:
+  - Habitación 11: $2,200 mensuales
 
 ### Coahuila 705
 - Tipo: Loft (Habitacional)
@@ -137,25 +144,36 @@
 
 ### Lofts Arts
 - Tipo: Mini lofts amueblados (Habitacional)
-- Precio: Desde $4,500 mensuales MXN
+- Precio: Desde $4,000 mensuales MXN
 - Dirección: Juan Bautista La Salle 509, Col. Panorama, León, Guanajuato, México
 - Mini lofts amueblados con servicios incluidos.
 - Incluye: Amueblados; Baño propio; Cocineta; Limpieza dos veces por semana; Área de lavado
 - Lofts disponibles:
+  - Loft A: Amueblado · $6,000 mensuales
+  - Loft B: Amueblado · $4,500 mensuales
   - Loft 10: Amueblado · $5,500 mensuales
-  - Loft C: Amueblado · $4,500 mensuales
+  - Loft C: Amueblado · $4,000 mensuales
+  - Loft 11: Amueblado · $7,000 mensuales
 
 ### Casa México 205
 - Tipo: Habitaciones (Habitacional)
-- Precio: Desde $3,500 mensuales MXN
+- Precio: Desde $3,000 mensuales MXN
 - Dirección: Av. México 205, Col. La Moderna, León, Guanajuato, México
 - Ubicada enfrente del IMSS T1. Contamos con habitaciones con baño propio y con baño compartido. Agenda una cita para conocer más detalles.
+- Habitaciones disponibles:
+  - Habitación 8: $3,000 mensuales
+  - Habitación 23: Baño compartido · $3,000 mensuales
+  - Habitación 24: Baño compartido · $3,000 mensuales
+  - Habitación 26: Baño propio · $4,000 mensuales
+  - Habitación 27: Clóset grande y baño propio · $5,500 mensuales
 
 ### Downtown León
 - Tipo: Habitaciones (Habitacional)
 - Precio: Desde $3,000 mensuales MXN
 - Dirección: Justo Sierra 509, Zona Centro, León, Guanajuato, México
 - En el corazón de la Zona Centro. Todas las habitaciones cuentan con baño propio. Depósito de solo $500. Agenda una cita para conocer más detalles: lunes a viernes de 9:00 a 16:00 h y sábados de 9:00 a 14:00 h.
+- Habitación disponible:
+  - Habitación 303: Baño propio · $3,000 mensuales
 
 ### La Salle 207
 - Tipo: Habitaciones (Habitacional)
@@ -163,6 +181,24 @@
 - Dirección: Juan Bautista La Salle 207, Col. Panorama, León, Guanajuato, México
 - Habitación amueblada con baño compartido en la Col. Panorama. Agenda una cita para conocerla.
 - Incluye: Amueblada; Escritorio; Clóset; Baño compartido
+
+### Suecia 112
+- Tipo: Habitaciones (Habitacional)
+- Precio: $4,000 mensuales MXN
+- Dirección: Suecia 112, Col. Paraísos, León, Guanajuato, México
+- Habitación disponible de inmediato en la Col. Paraísos. Agenda una cita para conocerla.
+- Habitación disponible:
+  - Habitación 5: $4,000 mensuales
+
+### Panorama 321
+- Tipo: Habitaciones (Habitacional)
+- Precio: $3,000 mensuales MXN
+- Dirección: Av. Panorama 321, Col. Panorama, León, Guanajuato, México
+- Habitaciones en la Col. Panorama. Agenda una cita para conocerlas.
+- Habitaciones disponibles:
+  - Habitación 1: $3,000 mensuales
+  - Habitación 2: $3,000 mensuales
+  - Habitación 5: $3,000 mensuales
 
 ## Preguntas frecuentes
 
@@ -199,4 +235,4 @@ En JEGAR cada cliente es importante. Si necesitas un plazo distinto, con nuestra
 **¿Qué tipos de espacios comerciales ofrecen?**
 Disponemos de oficinas privadas, consultorios, locales comerciales y espacios corporativos adaptados a distintos giros de negocio.
 
-Precios en pesos mexicanos (MXN), por mes, sujetos a disponibilidad. Última actualización: 2026-11-23.
+Precios en pesos mexicanos (MXN), por mes, sujetos a disponibilidad. Última actualización: 2026-11-25.

@@ -202,7 +202,7 @@ var PROPIEDADES = [
     fachada: "img/urban-center-fachada.jpg",
     locales: [
       {
-        nombre: "Local disponible",
+        nombre: "Local 1",
         detalle: "50 m² · $15,000 mensuales",
         fotos: [
           "img/urban-center-local-1-exterior.jpg",
@@ -393,15 +393,20 @@ var PROPIEDADES = [
     tipo: "",
     precio: "Desde $3,000 mensuales",
     direccion: "Juan Bautista La Salle 603, Col. Panorama, León",
-    titulo_unidades: "Espacio disponible",
+    titulo_unidades: "Espacios disponibles",
     locales: [
       {
-        nombre: "Espacio disponible",
+        nombre: "Consultorio 1",
         detalle: "8 m² · $3,000 mensuales",
         fotos: [
           "img/sananda-espacio-1.jpg",
           "img/sananda-espacio-2.jpg"
         ]
+      },
+      {
+        nombre: "Cafetería",
+        detalle: "$3,000 mensuales",
+        fotos: []
       }
     ],
     fachada: [
@@ -415,24 +420,22 @@ var PROPIEDADES = [
     nombre: "Ayurveda Consultorios",
     categoria: "Comercial",
     tipo: "Consultorios",
-    precio: "Desde $5,000 mensuales",
+    precio: "Desde $4,000 mensuales",
     direccion: "Puerto de Palos 122, Col. Arbide, León",
-    titulo_unidades: "Consultorio disponible",
+    titulo_unidades: "Consultorios disponibles",
     locales: [
-      {
-      nombre: "Consultorio",
-      detalle: "Desde $5,000 mensuales",
-      fotos: [
-        "img/ayurveda-consultorio-1.jpg",
-        "img/ayurveda-consultorio-2.jpg",
-        "img/ayurveda-consultorio-3.jpg",
-        "img/ayurveda-consultorio-4.jpg"
-      ]
-    }
+      { nombre: "Consultorio A", detalle: "$4,000 mensuales", fotos: [] },
+      { nombre: "Consultorio 7", detalle: "$5,000 mensuales", fotos: [] },
+      { nombre: "Consultorio 8", detalle: "$5,000 mensuales", fotos: [] },
+      { nombre: "Consultorio 9", detalle: "$5,000 mensuales", fotos: [] }
     ],
     fachada: [
       "img/ayurveda-fachada.jpg",
-      "img/ayurveda-recepcion.jpg"
+      "img/ayurveda-recepcion.jpg",
+      "img/ayurveda-consultorio-1.jpg",
+      "img/ayurveda-consultorio-2.jpg",
+      "img/ayurveda-consultorio-3.jpg",
+      "img/ayurveda-consultorio-4.jpg"
     ]
   },
   {
@@ -465,6 +468,13 @@ var PROPIEDADES = [
           "img/esquina-arbide-espacio-6-1.jpg",
           "img/esquina-arbide-espacio-6-2.jpg"
         ]
+      },
+      {
+        nombre: "Consultorio 7",
+        detalle: "$3,500 mensuales",
+        fotos: [
+          "img/esquina-arbide-espacio-7-1.jpg"
+        ]
       }
     ],
     fachada: [
@@ -474,12 +484,15 @@ var PROPIEDADES = [
   {
     nombre: "Catemaco 509",
     categoria: "Habitacional",
-    etiqueta: "Low cost · Sin depósito hasta el 31 de octubre",
-    etiqueta_vence: "2026-10-31",
+    etiqueta: "Low cost",
     tipo: "Habitaciones",
-    precio: "Desde $2,500 mensuales",
+    precio: "$2,200 mensuales",
     direccion: "Lago de Catemaco 509, Col. Lomas de la Trinidad, León",
-    descripcion: "Promoción sin depósito válida hasta el 31 de octubre. Habitación con baño compartido: $2,500 mensuales. Habitación con baño propio: $2,700 mensuales. Agenda una cita para conocer las habitaciones disponibles y elegir la tuya.",
+    descripcion: "Habitación low cost en la Col. Lomas de la Trinidad. Agenda una cita para conocerla.",
+    titulo_unidades: "Habitación disponible",
+    locales: [
+      { nombre: "Habitación 11", detalle: "$2,200 mensuales", fotos: [] }
+    ],
     fachada: [
       "img/catemaco-509-1.jpg",
       "img/catemaco-509-2.jpg",
@@ -512,7 +525,7 @@ var PROPIEDADES = [
     nombre: "Lofts Arts",
     categoria: "Habitacional",
     tipo: "Mini lofts amueblados",
-    precio: "Desde $4,500 mensuales",
+    precio: "Desde $4,000 mensuales",
     direccion: "Juan Bautista La Salle 509, Col. Panorama, León",
     descripcion: "Mini lofts amueblados con servicios incluidos.",
     incluye: [
@@ -525,6 +538,16 @@ var PROPIEDADES = [
     titulo_unidades: "Lofts disponibles",
     locales: [
       {
+        nombre: "Loft A",
+        detalle: "Amueblado · $6,000 mensuales",
+        fotos: [
+          "img/lofts-arts-a-1.jpg",
+          "img/lofts-arts-a-2.jpg",
+          "img/lofts-arts-a-3.jpg"
+        ]
+      },
+      { nombre: "Loft B", detalle: "Amueblado · $4,500 mensuales", fotos: [] },
+      {
         nombre: "Loft 10",
         detalle: "Amueblado · $5,500 mensuales",
         fotos: [
@@ -536,13 +559,14 @@ var PROPIEDADES = [
       },
       {
         nombre: "Loft C",
-        detalle: "Amueblado · $4,500 mensuales",
+        detalle: "Amueblado · $4,000 mensuales",
         fotos: [
           "img/lofts-arts-c-1.jpg",
           "img/lofts-arts-c-2.jpg",
           "img/lofts-arts-c-3.jpg"
         ]
-      }
+      },
+      { nombre: "Loft 11", detalle: "Amueblado · $7,000 mensuales", fotos: [] }
     ],
     fachada: ["img/lofts-arts-fachada.jpg"]
   },
@@ -550,11 +574,17 @@ var PROPIEDADES = [
     nombre: "Casa México 205",
     categoria: "Habitacional",
     tipo: "Habitaciones",
-    etiqueta: "Promoción sin depósito · Válida hasta el 31 de octubre",
-    etiqueta_vence: "2026-10-31",
-    precio: "Desde $3,500 mensuales",
+    precio: "Desde $3,000 mensuales",
     direccion: "Av. México 205, Col. La Moderna, León",
     descripcion: "Ubicada enfrente del IMSS T1. Contamos con habitaciones con baño propio y con baño compartido. Agenda una cita para conocer más detalles.",
+    titulo_unidades: "Habitaciones disponibles",
+    locales: [
+      { nombre: "Habitación 8", detalle: "$3,000 mensuales", fotos: [] },
+      { nombre: "Habitación 23", detalle: "Baño compartido · $3,000 mensuales", fotos: [] },
+      { nombre: "Habitación 24", detalle: "Baño compartido · $3,000 mensuales", fotos: [] },
+      { nombre: "Habitación 26", detalle: "Baño propio · $4,000 mensuales", fotos: [] },
+      { nombre: "Habitación 27", detalle: "Clóset grande y baño propio · $5,500 mensuales", fotos: [] }
+    ],
     fachada: [
       "img/casa-mexico-205-fachada.jpg",
       "img/casa-mexico-205-1.jpg",
@@ -570,6 +600,10 @@ var PROPIEDADES = [
     precio: "Desde $3,000 mensuales",
     direccion: "Justo Sierra 509, Zona Centro, León",
     descripcion: "En el corazón de la Zona Centro. Todas las habitaciones cuentan con baño propio. Depósito de solo $500. Agenda una cita para conocer más detalles: lunes a viernes de 9:00 a 16:00 h y sábados de 9:00 a 14:00 h.",
+    titulo_unidades: "Habitación disponible",
+    locales: [
+      { nombre: "Habitación 303", detalle: "Baño propio · $3,000 mensuales", fotos: [] }
+    ],
     fachada: [
       "img/downtown-leon-fachada.jpg",
       "img/downtown-leon-1.jpg",
@@ -602,6 +636,41 @@ var PROPIEDADES = [
       "img/salle-207-hab-4.jpg",
       "img/salle-207-fachada.jpg"
     ]
+  },
+  {
+    nombre: "Suecia 112",
+    categoria: "Habitacional",
+    tipo: "Habitaciones",
+    precio: "$4,000 mensuales",
+    direccion: "Suecia 112, Col. Paraísos, León",
+    descripcion: "Habitación disponible de inmediato en la Col. Paraísos. Agenda una cita para conocerla.",
+    titulo_unidades: "Habitación disponible",
+    locales: [
+      { nombre: "Habitación 5", detalle: "$4,000 mensuales", fotos: [] }
+    ],
+    fachada: ["img/suecia-112-fachada.jpg"]
+  },
+  {
+    nombre: "Panorama 321",
+    categoria: "Habitacional",
+    tipo: "Habitaciones",
+    precio: "$3,000 mensuales",
+    direccion: "Av. Panorama 321, Col. Panorama, León",
+    descripcion: "Habitaciones en la Col. Panorama. Agenda una cita para conocerlas.",
+    titulo_unidades: "Habitaciones disponibles",
+    locales: [
+      { nombre: "Habitación 1", detalle: "$3,000 mensuales", fotos: [] },
+      {
+        nombre: "Habitación 2",
+        detalle: "$3,000 mensuales",
+        fotos: [
+          "img/panorama-321-hab-2-1.jpg",
+          "img/panorama-321-hab-2-2.jpg"
+        ]
+      },
+      { nombre: "Habitación 5", detalle: "$3,000 mensuales", fotos: [] }
+    ],
+    fachada: ["img/avenida-panorama-fachada.jpg"]
   }
 ];
 
