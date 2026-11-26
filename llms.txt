@@ -60,13 +60,14 @@
 - Dirección: Blvd. Algeciras 1402, Col. Arbide, León, Guanajuato, México
 - Espacios disponibles:
   - Local 1: 50 m² · $15,000 mensuales
+  - Local 3: $15,000 mensuales · Próximamente
 
 ### Cañada Wellness Center
 - Tipo: Consultorios (Comercial)
 - Precio: Desde $6,000 mensuales MXN
 - Dirección: Calle Cañada 408, Col. Jardines del Moral, León, Guanajuato, México
 - Consultorios disponibles:
-  - Consultorio: 20 m² · $6,000 mensuales
+  - Espacio 6: 20 m² · $6,000 mensuales
 
 ### Casa Azul
 - Precio: Desde $3,000 mensuales MXN
@@ -154,6 +155,7 @@
   - Loft 10: Amueblado · $5,500 mensuales
   - Loft C: Amueblado · $4,000 mensuales
   - Loft 11: Amueblado · $7,000 mensuales
+  - Loft 12: Amueblado · $6,300 mensuales · Próximamente
 
 ### Casa México 205
 - Tipo: Habitaciones (Habitacional)

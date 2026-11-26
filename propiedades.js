@@ -209,7 +209,8 @@ var PROPIEDADES = [
           "img/urban-center-local-1-interior-1.jpg",
           "img/urban-center-local-1-interior-2.jpg"
         ]
-      }
+      },
+      { nombre: "Local 3", detalle: "$15,000 mensuales · Próximamente", fotos: [] }
     ]
   },
   {
@@ -222,7 +223,7 @@ var PROPIEDADES = [
     titulo_unidades: "Consultorios disponibles",
     locales: [
       {
-        nombre: "Consultorio",
+        nombre: "Espacio 6",
         detalle: "20 m² · $6,000 mensuales",
         fotos: [
           "img/canada-consultorio-1.jpg",
@@ -566,7 +567,8 @@ var PROPIEDADES = [
           "img/lofts-arts-c-3.jpg"
         ]
       },
-      { nombre: "Loft 11", detalle: "Amueblado · $7,000 mensuales", fotos: [] }
+      { nombre: "Loft 11", detalle: "Amueblado · $7,000 mensuales", fotos: [] },
+      { nombre: "Loft 12", detalle: "Amueblado · $6,300 mensuales · Próximamente", fotos: [] }
     ],
     fachada: ["img/lofts-arts-fachada.jpg"]
   },
